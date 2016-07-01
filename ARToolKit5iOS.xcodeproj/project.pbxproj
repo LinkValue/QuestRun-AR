@@ -36,7 +36,6 @@
 			);
 			dependencies = (
 				4A13033815BE01AF003A441C /* PBXTargetDependency */,
-				4AD0E16F1B748781007FDDD2 /* PBXTargetDependency */,
 			);
 			name = "ARToolKit5iOS examples";
 			productName = "ARToolKit5iOS examples";
@@ -121,32 +120,6 @@
 		4A33B70C18ADC8700028A979 /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A33B70818ADC8700028A979 /* ARView.m */; };
 		4A3453EB09E4D9DC00C508AB /* gsub_es.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A15ED1B09E35E8A00159C62 /* gsub_es.c */; };
 		4A347B3B18B16329000BEB89 /* ARMarkerMulti.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A33B70618ADC4590028A979 /* ARMarkerMulti.m */; };
-		4A4BAA8E1B745B210012B77D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8B555161AD5A200B48D70 /* Default-568h@2x.png */; };
-		4A4BAA8F1B745B210012B77D /* Default-LandscapeLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8B556161AD5A200B48D70 /* Default-LandscapeLeft.png */; };
-		4A4BAA901B745B210012B77D /* Default-LandscapeLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8B557161AD5A200B48D70 /* Default-LandscapeLeft@2x.png */; };
-		4A4BAA911B745B210012B77D /* Default-LandscapeRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8B558161AD5A200B48D70 /* Default-LandscapeRight.png */; };
-		4A4BAA921B745B210012B77D /* Default-LandscapeRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8B559161AD5A200B48D70 /* Default-LandscapeRight@2x.png */; };
-		4A4BAA931B745B210012B77D /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8B55A161AD5A200B48D70 /* Default-Portrait.png */; };
-		4A4BAA941B745B210012B77D /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8B55B161AD5A200B48D70 /* Default-Portrait@2x.png */; };
-		4A4BAA951B745B210012B77D /* Default-PortraitUpsideDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8B55C161AD5A200B48D70 /* Default-PortraitUpsideDown.png */; };
-		4A4BAA961B745B210012B77D /* Default-PortraitUpsideDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8B55D161AD5A200B48D70 /* Default-PortraitUpsideDown@2x.png */; };
-		4A4BAA971B745B210012B77D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8B55E161AD5A200B48D70 /* Default.png */; };
-		4A4BAA981B745B210012B77D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8B55F161AD5A200B48D70 /* Default@2x.png */; };
-		4A4BAAAD1B745B210012B77D /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACEFC30130AEC6C009D1DA0 /* libjpeg.a */; };
-		4A4BAAAE1B745B210012B77D /* libARvideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A941C5E1AE5D923000FA802 /* libARvideo.a */; };
-		4A4BAAAF1B745B210012B77D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1822E30DC97C2700B73A53 /* QuartzCore.framework */; };
-		4A4BAAB01B745B210012B77D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1822E70DC97C3800B73A53 /* CoreGraphics.framework */; };
-		4A4BAAB21B745B210012B77D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1822D30DC96E3B00B73A53 /* OpenGLES.framework */; };
-		4A4BAAB31B745B210012B77D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1822E10DC97C2700B73A53 /* Foundation.framework */; };
-		4A4BAAB41B745B210012B77D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1822E50DC97C2700B73A53 /* UIKit.framework */; };
-		4A4BAAB51B745B210012B77D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC2E636118ED63E00CC4F55 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		4A4BAAB61B745B210012B77D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC2E638118ED63E00CC4F55 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		4A4BAAB71B745B210012B77D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC2E674118ED68C00CC4F55 /* CoreVideo.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		4A4BAAB81B745B210012B77D /* libAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEB26291804A42A002290C5 /* libAR.a */; };
-		4A4BAAB91B745B210012B77D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5BAA8F13D82DFD00C8D5E7 /* AudioToolbox.framework */; };
-		4A4BAABA1B745B210012B77D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8393B5152163C000D8FE60 /* Accelerate.framework */; };
-		4A4BAAD51B745E580012B77D /* libARgsub_es2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6C5E501794F4E700061A08 /* libARgsub_es2.a */; };
-		4A4BAB081B745EDE0012B77D /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A33B6B818ADB7C50028A979 /* EAGLView.m */; };
 		4A5433EE1B4A1B840091CA91 /* EdenError.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A5433EA1B4A1B840091CA91 /* EdenError.c */; };
 		4A5433EF1B4A1B840091CA91 /* EdenGLFont.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A5433EB1B4A1B840091CA91 /* EdenGLFont.c */; };
 		4A5433F01B4A1B840091CA91 /* EdenMessage.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A5433EC1B4A1B840091CA91 /* EdenMessage.c */; };
@@ -159,12 +132,8 @@
 		4A6C5E551794F59F00061A08 /* gsub_mtx.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A6C5E531794F59F00061A08 /* gsub_mtx.h */; };
 		4A6C5E561794F59F00061A08 /* gsub_mtx.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C5E541794F59F00061A08 /* gsub_mtx.c */; };
 		4A75E8E81C9233AE00DC8915 /* videoLuma.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A75E8E71C92339E00DC8915 /* videoLuma.c */; };
-		4A920D561CC87E3D0065B301 /* libARUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A941BD91AE5D8DC000FA802 /* libARUtil.a */; };
 		4A920D621CC87EBE0065B301 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A920D5C1CC87EBE0065B301 /* libcurl.a */; };
-		4A920D641CC87EBE0065B301 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A920D5C1CC87EBE0065B301 /* libcurl.a */; };
 		4A920D691CC87EED0065B301 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A13038C15BE0874003A441C /* libz.dylib */; };
-		4A920D6A1CC87EED0065B301 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A13038C15BE0874003A441C /* libz.dylib */; };
-		4A920D6C1CC87F1D0065B301 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A920D6B1CC87F1D0065B301 /* Security.framework */; };
 		4A920D721CC87F5B0065B301 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A920D6B1CC87F1D0065B301 /* Security.framework */; };
 		4A920D7E1CC8E4180065B301 /* cpuInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A920D741CC88AED0065B301 /* cpuInfo.c */; };
 		4A941CF01AE5DC4F000FA802 /* icpCalibStereo.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A941CB31AE5DBEC000FA802 /* icpCalibStereo.c */; };
@@ -366,34 +335,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4ACE00A1130B3F16009D1DA0;
 			remoteInfo = ARosg;
-		};
-		4A4BAA7E1B745B210012B77D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78BB3DD408E482DA00D7CA2D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4AEB26281804A42A002290C5;
-			remoteInfo = AR;
-		};
-		4A4BAA821B745B210012B77D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78BB3DD408E482DA00D7CA2D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4AC36B62113E654400C86F19;
-			remoteInfo = Eden;
-		};
-		4A4BAAD61B745E660012B77D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78BB3DD408E482DA00D7CA2D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A6C5E451794F4E700061A08;
-			remoteInfo = ARgsub_es2;
-		};
-		4A4BAAD81B745E6B0012B77D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78BB3DD408E482DA00D7CA2D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A941BDA1AE5D923000FA802;
-			remoteInfo = ARvideo;
 		};
 		4A4BAAE61B745E940012B77D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -604,13 +545,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4A941B551AE5D8DC000FA802;
 			remoteInfo = ARUtil;
-		};
-		4AD0E16E1B748781007FDDD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78BB3DD408E482DA00D7CA2D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A4BAA7C1B745B210012B77D;
-			remoteInfo = ARAppCameraTest;
 		};
 		4AD5C44A0A39035C003F13D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -835,7 +769,6 @@
 		4A33B70718ADC8700028A979 /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
 		4A33B70818ADC8700028A979 /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
 		4A3543441683173C0083B43E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		4A4BAAC01B745B210012B77D /* ARAppCameraTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARAppCameraTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5433EA1B4A1B840091CA91 /* EdenError.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = EdenError.c; sourceTree = "<group>"; };
 		4A5433EB1B4A1B840091CA91 /* EdenGLFont.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = EdenGLFont.c; sourceTree = "<group>"; };
 		4A5433EC1B4A1B840091CA91 /* EdenMessage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = EdenMessage.c; sourceTree = "<group>"; };
@@ -2253,31 +2186,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A4BAAA91B745B210012B77D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A920D6C1CC87F1D0065B301 /* Security.framework in Frameworks */,
-				4A4BAAD51B745E580012B77D /* libARgsub_es2.a in Frameworks */,
-				4A4BAAAD1B745B210012B77D /* libjpeg.a in Frameworks */,
-				4A4BAAAE1B745B210012B77D /* libARvideo.a in Frameworks */,
-				4A920D6A1CC87EED0065B301 /* libz.dylib in Frameworks */,
-				4A4BAAAF1B745B210012B77D /* QuartzCore.framework in Frameworks */,
-				4A4BAAB01B745B210012B77D /* CoreGraphics.framework in Frameworks */,
-				4A920D641CC87EBE0065B301 /* libcurl.a in Frameworks */,
-				4A4BAAB21B745B210012B77D /* OpenGLES.framework in Frameworks */,
-				4A4BAAB31B745B210012B77D /* Foundation.framework in Frameworks */,
-				4A4BAAB41B745B210012B77D /* UIKit.framework in Frameworks */,
-				4A920D561CC87E3D0065B301 /* libARUtil.a in Frameworks */,
-				4A4BAAB51B745B210012B77D /* AVFoundation.framework in Frameworks */,
-				4A4BAAB61B745B210012B77D /* CoreMedia.framework in Frameworks */,
-				4A4BAAB71B745B210012B77D /* CoreVideo.framework in Frameworks */,
-				4A4BAAB81B745B210012B77D /* libAR.a in Frameworks */,
-				4A4BAAB91B745B210012B77D /* AudioToolbox.framework in Frameworks */,
-				4A4BAABA1B745B210012B77D /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4742,7 +4650,6 @@
 				4A941B541AE5D8D9000FA802 /* libKPM.a */,
 				4A941BD91AE5D8DC000FA802 /* libARUtil.a */,
 				4A941C5E1AE5D923000FA802 /* libARvideo.a */,
-				4A4BAAC01B745B210012B77D /* ARAppCameraTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4848,27 +4755,6 @@
 			productName = libARgsub;
 			productReference = 4AD26CBB13B37EEB00F5E037 /* libARgsub_es.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		4A4BAA7C1B745B210012B77D /* ARAppCameraTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A4BAABC1B745B210012B77D /* Build configuration list for PBXNativeTarget "ARAppCameraTest" */;
-			buildPhases = (
-				4A4BAA831B745B210012B77D /* Resources */,
-				4A4BAA9D1B745B210012B77D /* Sources */,
-				4A4BAAA91B745B210012B77D /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4A4BAAD91B745E6B0012B77D /* PBXTargetDependency */,
-				4A4BAAD71B745E660012B77D /* PBXTargetDependency */,
-				4A4BAA7D1B745B210012B77D /* PBXTargetDependency */,
-				4A4BAA811B745B210012B77D /* PBXTargetDependency */,
-			);
-			name = ARAppCameraTest;
-			productName = ARApp;
-			productReference = 4A4BAAC01B745B210012B77D /* ARAppCameraTest.app */;
-			productType = "com.apple.product-type.application";
 		};
 		4A6C5E451794F4E700061A08 /* ARgsub_es2 */ = {
 			isa = PBXNativeTarget;
@@ -5120,7 +5006,6 @@
 				4AEB26FD1804A8D8002290C5 /* ARWrapper */,
 				4A15ED4509E361E400159C62 /* ARToolKit5iOS examples */,
 				4A1302FF15BDFF17003A441C /* ARAppNFT */,
-				4A4BAA7C1B745B210012B77D /* ARAppCameraTest */,
 			);
 		};
 /* End PBXProject section */
@@ -5156,24 +5041,6 @@
 				4AA8B5E3161AEE0000B48D70 /* Iris-iPad.png in Resources */,
 				4AA8B5E4161AEE0000B48D70 /* Iris-iPad@2x.png in Resources */,
 				4AA8B5E5161AEE0000B48D70 /* Iris@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A4BAA831B745B210012B77D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A4BAA8E1B745B210012B77D /* Default-568h@2x.png in Resources */,
-				4A4BAA8F1B745B210012B77D /* Default-LandscapeLeft.png in Resources */,
-				4A4BAA901B745B210012B77D /* Default-LandscapeLeft@2x.png in Resources */,
-				4A4BAA911B745B210012B77D /* Default-LandscapeRight.png in Resources */,
-				4A4BAA921B745B210012B77D /* Default-LandscapeRight@2x.png in Resources */,
-				4A4BAA931B745B210012B77D /* Default-Portrait.png in Resources */,
-				4A4BAA941B745B210012B77D /* Default-Portrait@2x.png in Resources */,
-				4A4BAA951B745B210012B77D /* Default-PortraitUpsideDown.png in Resources */,
-				4A4BAA961B745B210012B77D /* Default-PortraitUpsideDown@2x.png in Resources */,
-				4A4BAA971B745B210012B77D /* Default.png in Resources */,
-				4A4BAA981B745B210012B77D /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5241,14 +5108,6 @@
 				4AC5D39B17D96074000944F7 /* gsub_mtx.c in Sources */,
 				4A3453EB09E4D9DC00C508AB /* gsub_es.c in Sources */,
 				4A0F33980E8009F200065B70 /* glStateCache.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A4BAA9D1B745B210012B77D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A4BAB081B745EDE0012B77D /* EAGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5521,26 +5380,6 @@
 			target = 4ACE00A1130B3F16009D1DA0 /* ARosg */;
 			targetProxy = 4A469652130B414700F7DE7F /* PBXContainerItemProxy */;
 		};
-		4A4BAA7D1B745B210012B77D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4AEB26281804A42A002290C5 /* AR */;
-			targetProxy = 4A4BAA7E1B745B210012B77D /* PBXContainerItemProxy */;
-		};
-		4A4BAA811B745B210012B77D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4AC36B62113E654400C86F19 /* Eden */;
-			targetProxy = 4A4BAA821B745B210012B77D /* PBXContainerItemProxy */;
-		};
-		4A4BAAD71B745E660012B77D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A6C5E451794F4E700061A08 /* ARgsub_es2 */;
-			targetProxy = 4A4BAAD61B745E660012B77D /* PBXContainerItemProxy */;
-		};
-		4A4BAAD91B745E6B0012B77D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A941BDA1AE5D923000FA802 /* ARvideo */;
-			targetProxy = 4A4BAAD81B745E6B0012B77D /* PBXContainerItemProxy */;
-		};
 		4A4BAAE71B745E940012B77D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4AEB26281804A42A002290C5 /* AR */;
@@ -5690,11 +5529,6 @@
 			isa = PBXTargetDependency;
 			target = 4A941B551AE5D8DC000FA802 /* ARUtil */;
 			targetProxy = 4A941CB11AE5DB73000FA802 /* PBXContainerItemProxy */;
-		};
-		4AD0E16F1B748781007FDDD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A4BAA7C1B745B210012B77D /* ARAppCameraTest */;
-			targetProxy = 4AD0E16E1B748781007FDDD2 /* PBXContainerItemProxy */;
 		};
 		4AD5C44B0A39035C003F13D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5868,56 +5702,6 @@
 				PRODUCT_NAME = "ARToolKit5iOS examples";
 			};
 			name = Release;
-		};
-		4A4BAABD1B745B210012B77D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = examples/ARAppCameraTest/ARAppCameraTest_Prefix.pch;
-				INFOPLIST_FILE = "examples/ARAppCameraTest/ARAppCameraTest-Info.plist";
-				OTHER_LDFLAGS = "-lsqlite3";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.artoolkit.${PRODUCT_NAME:identifier}";
-				PRODUCT_NAME = ARAppCameraTest;
-				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4A4BAABE1B745B210012B77D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = examples/ARAppCameraTest/ARAppCameraTest_Prefix.pch;
-				INFOPLIST_FILE = "examples/ARAppCameraTest/ARAppCameraTest-Info.plist";
-				OTHER_LDFLAGS = "-lsqlite3";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.artoolkit.${PRODUCT_NAME:identifier}";
-				PRODUCT_NAME = ARAppCameraTest;
-				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		4A4BAABF1B745B210012B77D /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = examples/ARAppCameraTest/dist.plist;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = examples/ARAppCameraTest/ARAppCameraTest_Prefix.pch;
-				INFOPLIST_FILE = "examples/ARAppCameraTest/ARAppCameraTest-Info.plist";
-				OTHER_LDFLAGS = "-lsqlite3";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.artoolkit.${PRODUCT_NAME:identifier}";
-				PRODUCT_NAME = ARAppCameraTest;
-				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Distribution;
 		};
 		4A6C5E4D1794F4E700061A08 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -6698,16 +6482,6 @@
 				4A15ED5209E3621C00159C62 /* Debug */,
 				4A15ED5309E3621C00159C62 /* Release */,
 				4A999E410E3FFB2300C5E093 /* Distribution */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A4BAABC1B745B210012B77D /* Build configuration list for PBXNativeTarget "ARAppCameraTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A4BAABD1B745B210012B77D /* Debug */,
-				4A4BAABE1B745B210012B77D /* Release */,
-				4A4BAABF1B745B210012B77D /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
