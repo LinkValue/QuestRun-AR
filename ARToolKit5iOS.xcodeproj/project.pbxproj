@@ -712,7 +712,7 @@
 		4A1302A715BDF958003A441C /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		4A1302A815BDF958003A441C /* kpm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kpm.h; sourceTree = "<group>"; };
 		4A1302A915BDF958003A441C /* kpmType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kpmType.h; sourceTree = "<group>"; };
-		4A13033415BDFF17003A441C /* ARAppNFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARAppNFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A13033415BDFF17003A441C /* PocAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A13038C15BE0874003A441C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4A15779F1133DF8600140865 /* arImageProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arImageProc.h; sourceTree = "<group>"; };
 		4A15ED1809E35E2E00159C62 /* gsub_es.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = gsub_es.h; sourceTree = "<group>"; };
@@ -4641,7 +4641,7 @@
 				4AD26CBC13B37EEB00F5E037 /* libARMulti.a */,
 				4AD26CBF13B37EEB00F5E037 /* libARosg.a */,
 				4AD26CC013B37EEB00F5E037 /* libEden.a */,
-				4A13033415BDFF17003A441C /* ARAppNFT.app */,
+				4A13033415BDFF17003A441C /* PocAR.app */,
 				4A6C5E501794F4E700061A08 /* libARgsub_es2.a */,
 				4AEB26291804A42A002290C5 /* libAR.a */,
 				4AEB27081804A8D8002290C5 /* libARWrapper.a */,
@@ -4735,7 +4735,7 @@
 			);
 			name = ARAppNFT;
 			productName = ARApp;
-			productReference = 4A13033415BDFF17003A441C /* ARAppNFT.app */;
+			productReference = 4A13033415BDFF17003A441C /* PocAR.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4A15ED2209E35F0800159C62 /* ARgsub_es */ = {
