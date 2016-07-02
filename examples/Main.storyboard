@@ -146,17 +146,123 @@
                         <outlet property="bottomSpaceTucheMarker" destination="2l8-2i-me2" id="8tP-hC-U1H"/>
                         <outlet property="heightProgressConstraint" destination="tyk-Fz-zlc" id="lY8-NS-OSH"/>
                         <outlet property="thermometerProgress" destination="LQh-VY-06T" id="TL2-jn-7dY"/>
+                        <segue destination="ZMg-ce-5L6" kind="presentation" identifier="NextStepSegue" modalTransitionStyle="flipHorizontal" id="FM5-qo-m4M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNd-sk-A3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="451.5" y="353.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="35t-vN-Ko7">
+            <objects>
+                <viewController id="fdn-Wk-sY6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ib1-Vq-0J1"/>
+                        <viewControllerLayoutGuide type="bottom" id="QkF-JX-EM4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CXd-Pk-mf8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecran_question" translatesAutoresizingMaskIntoConstraints="NO" id="m5P-CW-0pP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-NK-hgv">
+                                <rect key="frame" x="229" y="578" width="51" height="29"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwg-1G-GS2">
+                                <rect key="frame" x="60" y="468" width="258" height="56"/>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tick_yes" translatesAutoresizingMaskIntoConstraints="NO" id="lv1-ni-jxI">
+                                <rect key="frame" x="280" y="485" width="25" height="25"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m5P-CW-0pP" firstAttribute="top" secondItem="CXd-Pk-mf8" secondAttribute="top" id="Oen-eB-9P9"/>
+                            <constraint firstItem="QkF-JX-EM4" firstAttribute="top" secondItem="m5P-CW-0pP" secondAttribute="bottom" id="UtR-6Q-OT1"/>
+                            <constraint firstItem="m5P-CW-0pP" firstAttribute="leading" secondItem="CXd-Pk-mf8" secondAttribute="leading" id="VmD-ie-a5q"/>
+                            <constraint firstAttribute="trailing" secondItem="m5P-CW-0pP" secondAttribute="trailing" id="vl8-U7-kwr"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twE-Ww-z5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451.5" y="1123.5"/>
+        </scene>
+        <!--Next Step View Controller-->
+        <scene sceneID="yKk-hc-ehi">
+            <objects>
+                <viewController id="ZMg-ce-5L6" customClass="NextStepViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KVt-KF-NMS"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZOQ-WX-dZ8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HOc-3Z-kgl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="txt" translatesAutoresizingMaskIntoConstraints="NO" id="UmC-dT-FIg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flechette_seul" translatesAutoresizingMaskIntoConstraints="NO" id="cEZ-Yw-80R">
+                                <rect key="frame" x="-242" y="368" width="245" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="B9c-CL-PUZ"/>
+                                    <constraint firstAttribute="height" constant="245" id="atA-4G-RkI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffre_seul" translatesAutoresizingMaskIntoConstraints="NO" id="C0T-rl-c60">
+                                <rect key="frame" x="375" y="463" width="245" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="I6C-lb-Ubc"/>
+                                    <constraint firstAttribute="width" constant="245" id="bd3-sA-eRP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUL-l9-jJK">
+                                <rect key="frame" x="62" y="270" width="250" height="55"/>
+                                <state key="normal" title="Button" image="bouton_go"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="ZMg-ce-5L6" eventType="touchUpInside" id="TPv-an-Ggw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cEZ-Yw-80R" firstAttribute="leading" secondItem="HOc-3Z-kgl" secondAttribute="leading" constant="-242" id="9Le-cw-2PN"/>
+                            <constraint firstItem="ZOQ-WX-dZ8" firstAttribute="top" secondItem="UmC-dT-FIg" secondAttribute="bottom" id="GlX-Ci-NhX"/>
+                            <constraint firstAttribute="trailing" secondItem="C0T-rl-c60" secondAttribute="trailing" constant="-245" id="Rf9-of-KgD"/>
+                            <constraint firstItem="ZOQ-WX-dZ8" firstAttribute="top" secondItem="cEZ-Yw-80R" secondAttribute="bottom" constant="54" id="ZaY-hP-huK"/>
+                            <constraint firstItem="UmC-dT-FIg" firstAttribute="top" secondItem="HOc-3Z-kgl" secondAttribute="top" id="eXB-WN-2nC"/>
+                            <constraint firstItem="UmC-dT-FIg" firstAttribute="leading" secondItem="HOc-3Z-kgl" secondAttribute="leading" id="ew5-Gx-77k"/>
+                            <constraint firstItem="ZOQ-WX-dZ8" firstAttribute="top" secondItem="C0T-rl-c60" secondAttribute="bottom" constant="31" id="gUl-2x-kzO"/>
+                            <constraint firstAttribute="trailing" secondItem="UmC-dT-FIg" secondAttribute="trailing" id="swF-rg-T37"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backButton" destination="OUL-l9-jJK" id="u3d-87-BFx"/>
+                        <outlet property="flecheLeftConstraint" destination="9Le-cw-2PN" id="d82-xv-md5"/>
+                        <outlet property="treasureRightConstraint" destination="Rf9-of-KgD" id="ST0-UD-LBt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gn-tp-4iq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875.5" y="353.5"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="bouton_go" width="254" height="54"/>
+        <image name="coffre_seul" width="245" height="172"/>
         <image name="decompte_1_99" width="375" height="667"/>
+        <image name="ecran_question" width="375" height="667"/>
+        <image name="flechette_seul" width="245" height="245"/>
         <image name="home" width="750" height="1334"/>
         <image name="map" width="375" height="667"/>
+        <image name="tick_yes" width="24" height="24"/>
         <image name="tuche_marker" width="173" height="171"/>
+        <image name="txt" width="1562" height="2779"/>
     </resources>
 </document>

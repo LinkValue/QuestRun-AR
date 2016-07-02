@@ -55,5 +55,6 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet ARViewController *viewController;
+@property (nonatomic, strong) UIViewController *currentViewcontroller;
 
 @end

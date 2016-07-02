@@ -50,6 +50,7 @@
 #import <AR/gsub_es.h>
 #import "../ARAppCore/ARMarkerNFT.h"
 #import "../ARAppCore/trackingSub.h"
+#import "ARAppNFTDelegate.h"
 
 #define VIEW_DISTANCE_MIN        5.0f          // Objects closer to the camera than this will not be displayed.
 #define VIEW_DISTANCE_MAX        2000.0f        // Objects further away from the camera than this will not be displayed.
@@ -96,7 +97,6 @@
     AR2HandleT          *ar2Handle;
     KpmHandle           *kpmHandle;
     AR2SurfaceSetT      *surfaceSet[PAGES_MAX]; // Weak-reference. Strong reference is now in ARMarkerNFT class.
-    
     // NFT results.
     int detectedPage; // -2 Tracking not inited, -1 tracking inited OK, >= 0 tracking online on page.
     float trackingTrans[3][4];
@@ -158,7 +158,9 @@
 	
 	[self.navigationController setNavigationBarHidden:YES animated:NO];
 	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-	[self.navigationController presentViewController:[storyboard instantiateInitialViewController] animated:NO completion:nil];
+	ARAppNFTDelegate *delegate = [UIApplication sharedApplication].delegate;
+	delegate.currentViewcontroller = [storyboard instantiateInitialViewController];
+	//[self.navigationController presentViewController:delegate.currentViewcontroller animated:NO completion:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -166,6 +168,7 @@
     [super viewDidAppear:animated];
     [self start];
 }
+
 
 // On iOS 6.0 and later, we must explicitly report which orientations this view controller supports.
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
@@ -387,6 +390,13 @@ static void startCallback(void *userData)
     glView = [[[ARView alloc] initWithFrame:[[UIScreen mainScreen] bounds] pixelFormat:kEAGLColorFormatRGBA8 depthFormat:kEAGLDepth16 withStencil:NO preserveBackbuffer:NO] autorelease]; // Don't retain it, as it will be retained when added to self.view.
     glView.arViewController = self;
     [self.view addSubview:glView];
+	
+	UIImageView *imageView = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	imageView.image = [UIImage imageNamed:@"target_photo"];
+	imageView.userInteractionEnabled = YES;
+	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didClosePhoto:)];
+	[imageView addGestureRecognizer:tap];
+	[self.view addSubview:imageView];
     
     // Create the OpenGL projection from the calibrated camera parameters.
     // If flipV is set, flip.
@@ -447,6 +457,11 @@ static void startCallback(void *userData)
      //Create our runloop timer
     [self setRunLoopInterval:2]; // Target 30 fps on a 60 fps device.
     [self startRunLoop];
+}
+
+-(void)didClosePhoto:(UITapGestureRecognizer*) sender{
+	ARAppNFTDelegate *delegate = [UIApplication sharedApplication].delegate;
+	[self.navigationController presentViewController:delegate.currentViewcontroller animated:YES completion:nil];
 }
 
 - (void)loadNFTData

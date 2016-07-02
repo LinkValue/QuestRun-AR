@@ -3,9 +3,10 @@
 # Created with Kaydara FBX
 # 
 
-newmtl Mat
+newmtl Mat_1
+map_Kd entre-vert-et-bleu-18.jpg
 Ka 0.000000 0.000000 0.000000
-Kd 0.164706 0.498039 0.250980
+Kd 1.000000 1.000000 1.000000
 Ks 0.200000 0.200000 0.200000
 illum 2
 Ns 32.000000

@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, assign) id<ClubMebBeaconDelegate> delegate;
-
+@property (nonatomic, assign) BOOL hasVisited;
 
 
 @end
@@ -54,7 +54,15 @@
 }
 
 -(void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray<CLBeacon *> *)beacons inRegion:(CLBeaconRegion *)region{
-		[self.delegate didRangeBeacons:[beacons firstObject] inRegion:region];
+		CLBeacon *nearBeacon = [beacons firstObject];
+	if (nearBeacon){
+		if ([nearBeacon.major integerValue] == 1 || !self.hasVisited){
+			if ([nearBeacon.major integerValue] == 0 && nearBeacon.proximity == CLProximityImmediate){
+				self.hasVisited = YES;
+			}
+			[self.delegate didRangeBeacons:nearBeacon inRegion:region];
+		}
+	}
 	
 }
 

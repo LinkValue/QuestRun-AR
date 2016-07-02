@@ -1,12 +1,12 @@
 2
 
-models/tick_no.obj
+models/Fleche.obj
 100.0 100.0 0.0
 0.0 1.0 0.0 0.0
 16.0 16.0 16.0
 MARKER 1
 
-models/tick_yes.obj
+models/answer.obj
 100.0 100.0 0.0
 0.0 1.0 0.0 0.0
 16.0 16.0 16.0

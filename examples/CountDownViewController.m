@@ -33,18 +33,13 @@
 	[self performSelector:@selector(didFinishAnimation) withObject:nil afterDelay:3];
 }
 
+- (BOOL)prefersStatusBarHidden {
+	return YES;
+}
+
 -(void)didFinishAnimation{
 	[self performSegueWithIdentifier:@"ShowMapSegue" sender:nil];
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (void)dealloc {
 	[_countDownImageView release];

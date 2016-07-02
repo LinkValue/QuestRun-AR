@@ -7,6 +7,7 @@
 //
 
 #import "MapViewController.h"
+#import "NextStepViewController.h"
 #import "ClubMedBeaconManager.h"
 
 @interface MapViewController ()<ClubMebBeaconDelegate>
@@ -28,6 +29,9 @@
 	self.heightProgressConstraint.constant = 30;
 }
 
+- (BOOL)prefersStatusBarHidden {
+	return YES;
+}
 
 -(void) viewDidAppear:(BOOL)animated{
 	[super viewDidAppear:animated];
@@ -60,8 +64,33 @@
 		[UIView animateWithDuration:1 animations:^{
 			self.thermometerProgress.backgroundColor = color;
 			[self.view layoutIfNeeded];
+		} completion:^(BOOL finished) {
+			if (beacons && [beacons.major integerValue] == 0 && beacons.proximity == CLProximityImmediate){
+				[self performSelector:@selector(launchNextScreen) withObject:nil afterDelay:0.5];
+			} else if (beacons && [beacons.major integerValue] == 1 && beacons.proximity == CLProximityImmediate ){
+			[self performSelector:@selector(launchFlechesScreen) withObject:nil afterDelay:0.5];
+			}
 		}];
 	});
+}
+
+-(void) launchNextScreen{
+	[self performSegueWithIdentifier:@"NextStepSegue" sender:nil];
+	self.heightProgressConstraint.constant = 30;
+	[UIView animateWithDuration:0.5 animations:^{
+		[self.view layoutIfNeeded];
+		self.thermometerProgress.backgroundColor = UIColorFromRGB(0x406ab2);
+	}];
+}
+
+-(void)launchFlechesScreen{
+	
+	self.heightProgressConstraint.constant = 30;
+	[UIView animateWithDuration:0.5 animations:^{
+		[self.view layoutIfNeeded];
+		self.thermometerProgress.backgroundColor = UIColorFromRGB(0x406ab2);
+	}];
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)dealloc {

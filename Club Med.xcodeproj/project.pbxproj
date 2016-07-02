@@ -307,6 +307,8 @@
 		DA8A0FC81D27F53900D77EB5 /* ClubMedBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		DA8A0FCA1D27F66900D77EB5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A0FC91D27F66900D77EB5 /* CoreLocation.framework */; };
 		DA8A0FCB1D280F1100D77EB5 /* ARAppNFT-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A13028715BDF8F2003A441C /* ARAppNFT-Info.plist */; };
+		DA8C1CDF1D28392400FDC59A /* NextStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CDE1D28392400FDC59A /* NextStepViewController.m */; };
+		DA8C1CE01D2867F900FDC59A /* NextStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CDE1D28392400FDC59A /* NextStepViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2169,6 +2171,8 @@
 		DA8A0FC51D27E84800D77EB5 /* ClubMedBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubMedBeaconManager.h; sourceTree = "<group>"; };
 		DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubMedBeaconManager.m; sourceTree = "<group>"; };
 		DA8A0FC91D27F66900D77EB5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DA8C1CDD1D28392400FDC59A /* NextStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextStepViewController.h; sourceTree = "<group>"; };
+		DA8C1CDE1D28392400FDC59A /* NextStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextStepViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2305,6 +2309,8 @@
 				DA8A0FC31D27BF7E00D77EB5 /* MapViewController.m */,
 				DA8A0FC51D27E84800D77EB5 /* ClubMedBeaconManager.h */,
 				DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */,
+				DA8C1CDD1D28392400FDC59A /* NextStepViewController.h */,
+				DA8C1CDE1D28392400FDC59A /* NextStepViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -5136,6 +5142,7 @@
 				4A13035315BE02E1003A441C /* main.m in Sources */,
 				4A33B70C18ADC8700028A979 /* ARView.m in Sources */,
 				DA8A0FC81D27F53900D77EB5 /* ClubMedBeaconManager.m in Sources */,
+				DA8C1CE01D2867F900FDC59A /* NextStepViewController.m in Sources */,
 				4A33B6D318ADB9440028A979 /* VEObjectOBJ.m in Sources */,
 				DA8A0FC41D27BF7E00D77EB5 /* MapViewController.m in Sources */,
 				4A33B6E818ADBA2F0028A979 /* ARMarkerSquare.m in Sources */,
@@ -5342,6 +5349,7 @@
 				4AF101D8180BFC9100A922DE /* paramLT.c in Sources */,
 				4AF101C4180BFC9100A922DE /* mAllocMul.c in Sources */,
 				4AF101B8180BFC9100A922DE /* arGetTransMatStereo.c in Sources */,
+				DA8C1CDF1D28392400FDC59A /* NextStepViewController.m in Sources */,
 				4AF101E5180BFC9900A922DE /* arLabelingSubDBIC.c in Sources */,
 				4AF101CA180BFC9100A922DE /* mFree.c in Sources */,
 				4AF101B4180BFC9100A922DE /* arFilterTransMat.c in Sources */,
