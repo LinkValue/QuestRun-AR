@@ -14,5 +14,6 @@
 @end
 
 @interface ClubMedBeaconManager : NSObject
-
++ (ClubMedBeaconManager*)sharedInstanceWithDelegate:(id<ClubMebBeaconDelegate>) delegate;
+-(void) registerRegion;
 @end

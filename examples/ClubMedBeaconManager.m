@@ -32,8 +32,6 @@
 -(instancetype) initWithDelegate:(id<ClubMebBeaconDelegate>) delegate{
 	if (self = [super init]){
 		self.delegate = delegate;
-		[self registerRegion];
-		self.locationManager = [[CLLocationManager alloc] init];
 	}
 	return self;
 }
@@ -42,12 +40,12 @@
 	if (!self.locationManager){
 		self.locationManager = [[CLLocationManager alloc] init];
 	}
-	[self.locationManager requestWhenInUseAuthorization];
+	[self.locationManager requestAlwaysAuthorization];
 	self.locationManager.delegate = self;
 	
 	NSUUID *beaconUUID = [[NSUUID alloc] initWithUUIDString:
 						  @"CB77A7EF-E3F6-4375-BAED-A107205DAE7F"];
-	NSString *beaconIdentifier = @"iBeaconModules.us";
+	NSString *beaconIdentifier = @"ibeacon.clubmed";
 	CLBeaconRegion *beaconRegion1 = [[CLBeaconRegion alloc] initWithProximityUUID:
 									beaconUUID major:0 minor:0 identifier:beaconIdentifier];
 	CLBeaconRegion *beaconRegion2 = [[CLBeaconRegion alloc] initWithProximityUUID:
@@ -58,7 +56,9 @@
 }
 
 -(void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray<CLBeacon *> *)beacons inRegion:(CLBeaconRegion *)region{
-	[self.delegate didRangeBeacons:[beacons firstObject] inRegion:region];
+	if ([beacons count]){
+		[self.delegate didRangeBeacons:[beacons firstObject] inRegion:region];
+	}
 }
 
 @end

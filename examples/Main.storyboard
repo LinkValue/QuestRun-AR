@@ -110,6 +110,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQh-VY-06T">
+                                <rect key="frame" x="28" y="277" width="17" height="340"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="FHi-Rj-vMk"/>
+                                    <constraint firstAttribute="height" constant="340" id="tyk-Fz-zlc"/>
+                                </constraints>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="Z8r-le-84e">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
@@ -120,24 +128,24 @@
                                     <constraint firstAttribute="height" constant="50" id="o9Z-hF-zNV"/>
                                 </constraints>
                             </imageView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="UYj-3a-5bq">
-                                <rect key="frame" x="-118" y="461" width="330" height="3"/>
-                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uuI-cY-E7U" firstAttribute="top" secondItem="imr-z4-xm1" secondAttribute="bottom" constant="-50" id="2l8-2i-me2"/>
+                            <constraint firstItem="uuI-cY-E7U" firstAttribute="top" secondItem="LQh-VY-06T" secondAttribute="bottom" constant="50" id="5dh-w6-p2Y"/>
                             <constraint firstItem="imr-z4-xm1" firstAttribute="leading" secondItem="hbn-Pf-7Dq" secondAttribute="leading" constant="162" id="6Nq-Xg-hS5"/>
                             <constraint firstItem="Z8r-le-84e" firstAttribute="leading" secondItem="hbn-Pf-7Dq" secondAttribute="leading" id="BF8-AK-zuJ"/>
                             <constraint firstAttribute="trailing" secondItem="Z8r-le-84e" secondAttribute="trailing" id="Bin-Vj-c5G"/>
                             <constraint firstItem="uuI-cY-E7U" firstAttribute="top" secondItem="Z8r-le-84e" secondAttribute="bottom" id="O66-iW-j61"/>
+                            <constraint firstItem="LQh-VY-06T" firstAttribute="leading" secondItem="hbn-Pf-7Dq" secondAttribute="leading" constant="28" id="Oun-rd-MdD"/>
                             <constraint firstItem="Z8r-le-84e" firstAttribute="top" secondItem="hbn-Pf-7Dq" secondAttribute="top" id="x4P-r2-B1s"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="bottomSpaceTucheMarker" destination="2l8-2i-me2" id="8tP-hC-U1H"/>
-                        <outlet property="thermometer" destination="UYj-3a-5bq" id="bvG-Mn-398"/>
+                        <outlet property="heightProgressConstraint" destination="tyk-Fz-zlc" id="lY8-NS-OSH"/>
+                        <outlet property="thermometerProgress" destination="LQh-VY-06T" id="TL2-jn-7dY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNd-sk-A3v" userLabel="First Responder" sceneMemberID="firstResponder"/>

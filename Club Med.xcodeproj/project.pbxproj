@@ -306,6 +306,7 @@
 		DA8A0FC41D27BF7E00D77EB5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FC31D27BF7E00D77EB5 /* MapViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		DA8A0FC81D27F53900D77EB5 /* ClubMedBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		DA8A0FCA1D27F66900D77EB5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A0FC91D27F66900D77EB5 /* CoreLocation.framework */; };
+		DA8A0FCB1D280F1100D77EB5 /* ARAppNFT-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A13028715BDF8F2003A441C /* ARAppNFT-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -5057,6 +5058,7 @@
 				4A13035D15BE02F5003A441C /* Iris.png in Resources */,
 				DA8A0FB91D27B43000D77EB5 /* Main.storyboard in Resources */,
 				4A13035E15BE02F5003A441C /* MainWindow-iPad.xib in Resources */,
+				DA8A0FCB1D280F1100D77EB5 /* ARAppNFT-Info.plist in Resources */,
 				4A13035F15BE02F5003A441C /* MainWindow.xib in Resources */,
 				DA8A0FB71D27A51F00D77EB5 /* Images.xcassets in Resources */,
 				4A13036015BE02F9003A441C /* Data2 in Resources */,
@@ -5655,6 +5657,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = examples/ARAppNFT/ARAppNFT_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -5680,6 +5683,7 @@
 				CODE_SIGN_ENTITLEMENTS = examples/ARApp2/dist.plist;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = examples/ARAppNFT/ARAppNFT_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (

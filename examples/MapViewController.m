@@ -7,52 +7,56 @@
 //
 
 #import "MapViewController.h"
+#import "ClubMedBeaconManager.h"
 
-@interface MapViewController ()
+@interface MapViewController ()<ClubMebBeaconDelegate>
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomSpaceTucheMarker;
-@property (weak, nonatomic) IBOutlet UIProgressView *thermometer;
+@property (weak, nonatomic) IBOutlet UIView *thermometerProgress;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightProgressConstraint;
 
 @end
 
 @implementation MapViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-	
-	
+	[super viewDidLoad];
+	// Do any additional setup after loading the view.
+	ClubMedBeaconManager *beaconManager = [ClubMedBeaconManager sharedInstanceWithDelegate:self];
+	[beaconManager registerRegion];
+	self.thermometerProgress.backgroundColor = UIColorFromRGB(0x406ab2);
+	self.heightProgressConstraint.constant = 0;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 -(void) viewDidAppear:(BOOL)animated{
 	[super viewDidAppear:animated];
 	self.bottomSpaceTucheMarker.constant = 170;
-	self.thermometer.transform = CGAffineTransformMakeRotation(90 * M_PI/180);
-	
 	
 	[UIView animateWithDuration:1 animations:^{
 		[self.view layoutIfNeeded];
 	}];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+-(void)didRangeBeacons:(CLBeacon *)beacons inRegion:(CLBeaconRegion *)region{
+	dispatch_async(dispatch_get_main_queue(), ^{
+		// Your code to run on the main queue/thread
+		if (beacons.proximity == CLProximityImmediate){
+			self.heightProgressConstraint.constant = 340;
+			//self.
+		} else {
+			self.heightProgressConstraint.constant = 170;
+		}
+		[UIView animateWithDuration:1 animations:^{
+			[self.view layoutIfNeeded];
+		}];
+	});
 }
-*/
-/*
+
 - (void)dealloc {
-	[_bottomSpaceTucheMarker release];
-	[_thermometer release];
-	[super dealloc];
-}*/
+	//[_heightProgressConstraint release];
+	//[super dealloc];
+}
 @end
