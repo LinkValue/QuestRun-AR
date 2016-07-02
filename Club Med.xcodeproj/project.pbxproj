@@ -303,8 +303,9 @@
 		DA8A0FBD1D27B6C500D77EB5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FBB1D27B67D00D77EB5 /* HomeViewController.m */; };
 		DA8A0FC01D27B82500D77EB5 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FBF1D27B82500D77EB5 /* CountDownViewController.m */; };
 		DA8A0FC11D27B82700D77EB5 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FBF1D27B82500D77EB5 /* CountDownViewController.m */; };
-		DA8A0FC41D27BF7E00D77EB5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FC31D27BF7E00D77EB5 /* MapViewController.m */; };
-		DA8A0FC71D27E84800D77EB5 /* ClubMedBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */; };
+		DA8A0FC41D27BF7E00D77EB5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FC31D27BF7E00D77EB5 /* MapViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DA8A0FC81D27F53900D77EB5 /* ClubMedBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DA8A0FCA1D27F66900D77EB5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A0FC91D27F66900D77EB5 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -719,7 +720,7 @@
 		4A1302A715BDF958003A441C /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		4A1302A815BDF958003A441C /* kpm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kpm.h; sourceTree = "<group>"; };
 		4A1302A915BDF958003A441C /* kpmType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kpmType.h; sourceTree = "<group>"; };
-		4A13033415BDFF17003A441C /* PocAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A13033415BDFF17003A441C /* Club Med.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Club Med.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A13038C15BE0874003A441C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4A15779F1133DF8600140865 /* arImageProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arImageProc.h; sourceTree = "<group>"; };
 		4A15ED1809E35E2E00159C62 /* gsub_es.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = gsub_es.h; sourceTree = "<group>"; };
@@ -2166,6 +2167,7 @@
 		DA8A0FC31D27BF7E00D77EB5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		DA8A0FC51D27E84800D77EB5 /* ClubMedBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubMedBeaconManager.h; sourceTree = "<group>"; };
 		DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubMedBeaconManager.m; sourceTree = "<group>"; };
+		DA8A0FC91D27F66900D77EB5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2173,6 +2175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8A0FCA1D27F66900D77EB5 /* CoreLocation.framework in Frameworks */,
 				4A920D691CC87EED0065B301 /* libz.dylib in Frameworks */,
 				4A13031E15BDFF17003A441C /* libARgsub_es.a in Frameworks */,
 				4A13031F15BDFF17003A441C /* libARMulti.a in Frameworks */,
@@ -4503,6 +4506,7 @@
 		78BB3DD208E482DA00D7CA2D = {
 			isa = PBXGroup;
 			children = (
+				DA8A0FC91D27F66900D77EB5 /* CoreLocation.framework */,
 				78BB3F4F08E483AD00D7CA2D /* bin */,
 				78BB3F0F08E4837000D7CA2D /* include */,
 				78BB3DDF08E482F400D7CA2D /* lib */,
@@ -4670,7 +4674,7 @@
 				4AD26CBC13B37EEB00F5E037 /* libARMulti.a */,
 				4AD26CBF13B37EEB00F5E037 /* libARosg.a */,
 				4AD26CC013B37EEB00F5E037 /* libEden.a */,
-				4A13033415BDFF17003A441C /* PocAR.app */,
+				4A13033415BDFF17003A441C /* Club Med.app */,
 				4A6C5E501794F4E700061A08 /* libARgsub_es2.a */,
 				4AEB26291804A42A002290C5 /* libAR.a */,
 				4AEB27081804A8D8002290C5 /* libARWrapper.a */,
@@ -4764,7 +4768,7 @@
 			);
 			name = ARAppNFT;
 			productName = ARApp;
-			productReference = 4A13033415BDFF17003A441C /* PocAR.app */;
+			productReference = 4A13033415BDFF17003A441C /* Club Med.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4A15ED2209E35F0800159C62 /* ARgsub_es */ = {
@@ -5129,7 +5133,7 @@
 				4A33B6E418ADBA100028A979 /* ARMarkerNFT.m in Sources */,
 				4A13035315BE02E1003A441C /* main.m in Sources */,
 				4A33B70C18ADC8700028A979 /* ARView.m in Sources */,
-				DA8A0FC71D27E84800D77EB5 /* ClubMedBeaconManager.m in Sources */,
+				DA8A0FC81D27F53900D77EB5 /* ClubMedBeaconManager.m in Sources */,
 				4A33B6D318ADB9440028A979 /* VEObjectOBJ.m in Sources */,
 				DA8A0FC41D27BF7E00D77EB5 /* MapViewController.m in Sources */,
 				4A33B6E818ADBA2F0028A979 /* ARMarkerSquare.m in Sources */,
@@ -5624,6 +5628,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -5647,6 +5652,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -5670,6 +5676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_ENTITLEMENTS = examples/ARApp2/dist.plist;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

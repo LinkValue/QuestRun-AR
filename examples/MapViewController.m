@@ -7,11 +7,12 @@
 //
 
 #import "MapViewController.h"
-#import <CoreLocation/CoreLocation.h>
-@interface MapViewController ()<CLLocationManagerDelegate>
 
-@property (retain, nonatomic) IBOutlet NSLayoutConstraint *bottomSpaceTucheMarker;
-@property (nonatomic, strong) CLLocationManager *locationManager;
+@interface MapViewController ()
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomSpaceTucheMarker;
+@property (weak, nonatomic) IBOutlet UIProgressView *thermometer;
+
 @end
 
 @implementation MapViewController
@@ -31,6 +32,8 @@
 -(void) viewDidAppear:(BOOL)animated{
 	[super viewDidAppear:animated];
 	self.bottomSpaceTucheMarker.constant = 170;
+	self.thermometer.transform = CGAffineTransformMakeRotation(90 * M_PI/180);
+	
 	
 	[UIView animateWithDuration:1 animations:^{
 		[self.view layoutIfNeeded];
@@ -46,9 +49,10 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+/*
 - (void)dealloc {
 	[_bottomSpaceTucheMarker release];
+	[_thermometer release];
 	[super dealloc];
-}
+}*/
 @end

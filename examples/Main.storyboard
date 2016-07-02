@@ -120,6 +120,9 @@
                                     <constraint firstAttribute="height" constant="50" id="o9Z-hF-zNV"/>
                                 </constraints>
                             </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="UYj-3a-5bq">
+                                <rect key="frame" x="-118" y="461" width="330" height="3"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -134,6 +137,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="bottomSpaceTucheMarker" destination="2l8-2i-me2" id="8tP-hC-U1H"/>
+                        <outlet property="thermometer" destination="UYj-3a-5bq" id="bvG-Mn-398"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNd-sk-A3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -143,7 +147,7 @@
     </scenes>
     <resources>
         <image name="home" width="750" height="1334"/>
-        <image name="map" width="1562" height="2780"/>
+        <image name="map" width="375" height="667"/>
         <image name="tuche_marker" width="173" height="171"/>
     </resources>
     <inferredMetricsTieBreakers>

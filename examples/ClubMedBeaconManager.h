@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class CLBeacon;
-@class CLBeaconRegion;
+#import <CoreLocation/CoreLocation.h>
 
 @protocol ClubMebBeaconDelegate
 -(void) didRangeBeacons:(CLBeacon*)beacons inRegion:(CLBeaconRegion *)region;

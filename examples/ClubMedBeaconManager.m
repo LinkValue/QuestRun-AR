@@ -14,8 +14,9 @@
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, assign) id<ClubMebBeaconDelegate> delegate;
 
-@end
 
+
+@end
 
 @implementation ClubMedBeaconManager
 
@@ -32,6 +33,7 @@
 	if (self = [super init]){
 		self.delegate = delegate;
 		[self registerRegion];
+		self.locationManager = [[CLLocationManager alloc] init];
 	}
 	return self;
 }
