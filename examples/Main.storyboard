@@ -7,7 +7,6 @@
         <!--Navigation Controller-->
         <scene sceneID="ZLw-zb-wBA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UHV-2k-sM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="JiM-LQ-w3J" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lDp-Oc-b1K">
@@ -18,6 +17,7 @@
                         <segue destination="RVd-6X-Wc0" kind="relationship" relationship="rootViewController" id="n1y-VT-Dta"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHV-2k-sM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-824" y="354"/>
         </scene>
@@ -75,22 +75,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="dRU-fL-vvd">
-                                <rect key="frame" x="39" y="113" width="242" height="253"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="decompte_1_99" translatesAutoresizingMaskIntoConstraints="NO" id="dRU-fL-vvd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZX-fv-wmo">
-                                <rect key="frame" x="65" y="28" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="HIO-Ry-4NI" kind="show" id="htM-IN-GFP"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mBd-8K-2Z0" firstAttribute="top" secondItem="dRU-fL-vvd" secondAttribute="bottom" id="2QC-FT-Smt"/>
+                            <constraint firstAttribute="trailing" secondItem="dRU-fL-vvd" secondAttribute="trailing" id="8wH-2B-csW"/>
+                            <constraint firstItem="dRU-fL-vvd" firstAttribute="leading" secondItem="u80-8Y-te7" secondAttribute="leading" id="SjX-Bx-J4l"/>
+                            <constraint firstItem="dRU-fL-vvd" firstAttribute="top" secondItem="u80-8Y-te7" secondAttribute="top" id="oXf-cL-BZ5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="g1w-iG-4uD"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="countDownImageView" destination="dRU-fL-vvd" id="uDD-PW-OaV"/>
                         <segue destination="HIO-Ry-4NI" kind="show" identifier="ShowMapSegue" id="Hf3-fw-bVT"/>
                     </connections>
                 </viewController>
@@ -154,11 +154,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="decompte_1_99" width="375" height="667"/>
         <image name="home" width="750" height="1334"/>
         <image name="map" width="375" height="667"/>
         <image name="tuche_marker" width="173" height="171"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="htM-IN-GFP"/>
-    </inferredMetricsTieBreakers>
 </document>
