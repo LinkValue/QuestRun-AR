@@ -7,10 +7,11 @@
 //
 
 #import "MapViewController.h"
+#import <CoreLocation/CoreLocation.h>
+@interface MapViewController ()<CLLocationManagerDelegate>
 
-@interface MapViewController ()
 @property (retain, nonatomic) IBOutlet NSLayoutConstraint *bottomSpaceTucheMarker;
-
+@property (nonatomic, strong) CLLocationManager *locationManager;
 @end
 
 @implementation MapViewController
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	
+	
 }
 
 - (void)didReceiveMemoryWarning {

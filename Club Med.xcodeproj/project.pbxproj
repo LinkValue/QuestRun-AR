@@ -304,6 +304,7 @@
 		DA8A0FC01D27B82500D77EB5 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FBF1D27B82500D77EB5 /* CountDownViewController.m */; };
 		DA8A0FC11D27B82700D77EB5 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FBF1D27B82500D77EB5 /* CountDownViewController.m */; };
 		DA8A0FC41D27BF7E00D77EB5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FC31D27BF7E00D77EB5 /* MapViewController.m */; };
+		DA8A0FC71D27E84800D77EB5 /* ClubMedBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2163,6 +2164,8 @@
 		DA8A0FBF1D27B82500D77EB5 /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
 		DA8A0FC21D27BF7E00D77EB5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		DA8A0FC31D27BF7E00D77EB5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		DA8A0FC51D27E84800D77EB5 /* ClubMedBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubMedBeaconManager.h; sourceTree = "<group>"; };
+		DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubMedBeaconManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2296,6 +2299,8 @@
 				DA8A0FBF1D27B82500D77EB5 /* CountDownViewController.m */,
 				DA8A0FC21D27BF7E00D77EB5 /* MapViewController.h */,
 				DA8A0FC31D27BF7E00D77EB5 /* MapViewController.m */,
+				DA8A0FC51D27E84800D77EB5 /* ClubMedBeaconManager.h */,
+				DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -5124,6 +5129,7 @@
 				4A33B6E418ADBA100028A979 /* ARMarkerNFT.m in Sources */,
 				4A13035315BE02E1003A441C /* main.m in Sources */,
 				4A33B70C18ADC8700028A979 /* ARView.m in Sources */,
+				DA8A0FC71D27E84800D77EB5 /* ClubMedBeaconManager.m in Sources */,
 				4A33B6D318ADB9440028A979 /* VEObjectOBJ.m in Sources */,
 				DA8A0FC41D27BF7E00D77EB5 /* MapViewController.m in Sources */,
 				4A33B6E818ADBA2F0028A979 /* ARMarkerSquare.m in Sources */,
