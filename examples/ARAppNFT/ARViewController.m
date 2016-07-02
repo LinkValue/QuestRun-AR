@@ -155,6 +155,10 @@
     videoAsync = FALSE;
     
     detectedPage   = -2;
+	
+	[self.navigationController setNavigationBarHidden:YES animated:NO];
+	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+	[self.navigationController presentViewController:[storyboard instantiateInitialViewController] animated:NO completion:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated

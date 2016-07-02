@@ -62,7 +62,8 @@
     // Set working directory so that camera parameters, models etc. can be loaded using relative paths.
     arUtilChangeToResourcesDirectory(AR_UTIL_RESOURCES_DIRECTORY_BEHAVIOR_BEST, NULL);
 
-    self.window.rootViewController = self.viewController;
+	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    self.window.rootViewController = nav;
     [window makeKeyAndVisible];
 }
 

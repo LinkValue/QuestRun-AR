@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JiM-LQ-w3J">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ZLw-zb-wBA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHV-2k-sM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="JiM-LQ-w3J" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lDp-Oc-b1K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RVd-6X-Wc0" kind="relationship" relationship="rootViewController" id="n1y-VT-Dta"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-824" y="354"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="qCo-Ge-aRh">
+            <objects>
+                <viewController id="RVd-6X-Wc0" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ouj-Qb-j0Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="1mj-uP-GeL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i6u-i6-Llj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="yuk-7S-HtN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIe-2f-7Ju">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <connections>
+                                    <segue destination="244-z1-hzc" kind="show" id="R2B-54-USy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wIe-2f-7Ju" firstAttribute="top" secondItem="i6u-i6-Llj" secondAttribute="top" id="5jd-TW-kBS"/>
+                            <constraint firstItem="wIe-2f-7Ju" firstAttribute="leading" secondItem="i6u-i6-Llj" secondAttribute="leading" id="9TJ-qV-ysN"/>
+                            <constraint firstAttribute="trailing" secondItem="wIe-2f-7Ju" secondAttribute="trailing" id="OUP-gZ-nxG"/>
+                            <constraint firstAttribute="trailing" secondItem="yuk-7S-HtN" secondAttribute="trailing" id="UvA-dL-Sgu"/>
+                            <constraint firstItem="yuk-7S-HtN" firstAttribute="leading" secondItem="i6u-i6-Llj" secondAttribute="leading" id="WEn-Ju-fEI"/>
+                            <constraint firstItem="yuk-7S-HtN" firstAttribute="top" secondItem="i6u-i6-Llj" secondAttribute="top" id="aJo-25-CkE"/>
+                            <constraint firstItem="1mj-uP-GeL" firstAttribute="top" secondItem="yuk-7S-HtN" secondAttribute="bottom" id="qzL-tD-uS9"/>
+                            <constraint firstItem="1mj-uP-GeL" firstAttribute="top" secondItem="wIe-2f-7Ju" secondAttribute="bottom" id="zoG-y5-mD0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cjb-s6-dFb"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8BS-FY-hUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-406" y="354"/>
+        </scene>
+        <!--Count Down View Controller-->
+        <scene sceneID="dCp-6Y-ah3">
+            <objects>
+                <viewController id="244-z1-hzc" customClass="CountDownViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6qt-qI-s7h"/>
+                        <viewControllerLayoutGuide type="bottom" id="mBd-8K-2Z0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u80-8Y-te7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="dRU-fL-vvd">
+                                <rect key="frame" x="39" y="113" width="242" height="253"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZX-fv-wmo">
+                                <rect key="frame" x="65" y="28" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="HIO-Ry-4NI" kind="show" id="htM-IN-GFP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g1w-iG-4uD"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="HIO-Ry-4NI" kind="show" identifier="ShowMapSegue" id="Hf3-fw-bVT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Tl-D5-cOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17" y="354"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Vyn-mO-iie">
+            <objects>
+                <viewController id="HIO-Ry-4NI" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M25-Cf-Saw"/>
+                        <viewControllerLayoutGuide type="bottom" id="uuI-cY-E7U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hbn-Pf-7Dq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="Z8r-le-84e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tuche_marker" translatesAutoresizingMaskIntoConstraints="NO" id="imr-z4-xm1">
+                                <rect key="frame" x="162" y="667" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ntA-Yo-efd"/>
+                                    <constraint firstAttribute="height" constant="50" id="o9Z-hF-zNV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uuI-cY-E7U" firstAttribute="top" secondItem="imr-z4-xm1" secondAttribute="bottom" constant="-50" id="2l8-2i-me2"/>
+                            <constraint firstItem="imr-z4-xm1" firstAttribute="leading" secondItem="hbn-Pf-7Dq" secondAttribute="leading" constant="162" id="6Nq-Xg-hS5"/>
+                            <constraint firstItem="Z8r-le-84e" firstAttribute="leading" secondItem="hbn-Pf-7Dq" secondAttribute="leading" id="BF8-AK-zuJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Z8r-le-84e" secondAttribute="trailing" id="Bin-Vj-c5G"/>
+                            <constraint firstItem="uuI-cY-E7U" firstAttribute="top" secondItem="Z8r-le-84e" secondAttribute="bottom" id="O66-iW-j61"/>
+                            <constraint firstItem="Z8r-le-84e" firstAttribute="top" secondItem="hbn-Pf-7Dq" secondAttribute="top" id="x4P-r2-B1s"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bottomSpaceTucheMarker" destination="2l8-2i-me2" id="8tP-hC-U1H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNd-sk-A3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451.5" y="353.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home" width="750" height="1334"/>
+        <image name="map" width="1562" height="2780"/>
+        <image name="tuche_marker" width="173" height="171"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="htM-IN-GFP"/>
+    </inferredMetricsTieBreakers>
+</document>
