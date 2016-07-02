@@ -25,7 +25,7 @@
 	ClubMedBeaconManager *beaconManager = [ClubMedBeaconManager sharedInstanceWithDelegate:self];
 	[beaconManager registerRegion];
 	self.thermometerProgress.backgroundColor = UIColorFromRGB(0x406ab2);
-	self.heightProgressConstraint.constant = 0;
+	self.heightProgressConstraint.constant = 30;
 }
 
 
@@ -42,14 +42,23 @@
 
 -(void)didRangeBeacons:(CLBeacon *)beacons inRegion:(CLBeaconRegion *)region{
 	dispatch_async(dispatch_get_main_queue(), ^{
+		UIColor *color;
 		// Your code to run on the main queue/thread
 		if (beacons.proximity == CLProximityImmediate){
 			self.heightProgressConstraint.constant = 340;
-			//self.
-		} else {
+			color = UIColorFromRGB(0xda212e);
+		} else if (beacons.proximity == CLProximityNear) {
 			self.heightProgressConstraint.constant = 170;
+			color =  UIColorFromRGB(0xcc6633);
+		} else if (beacons.proximity == CLProximityFar) {
+			self.heightProgressConstraint.constant = 100;
+			color =  UIColorFromRGB(0x406ab2);
+		} else {
+			self.heightProgressConstraint.constant = 30;
+			color = UIColorFromRGB(0x406ab2);
 		}
 		[UIView animateWithDuration:1 animations:^{
+			self.thermometerProgress.backgroundColor = color;
 			[self.view layoutIfNeeded];
 		}];
 	});
