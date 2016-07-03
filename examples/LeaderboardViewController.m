@@ -7,6 +7,7 @@
 //
 
 #import "LeaderboardViewController.h"
+#import "AFSoundManager.h"
 
 @interface LeaderboardViewController ()
 @property (retain, nonatomic) IBOutlet UIImageView *imageview;
@@ -19,6 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap)];
+	self.imageview.userInteractionEnabled = YES;
+	[self.imageview addGestureRecognizer:tap];
+	AFSoundItem *item = [[AFSoundItem alloc] initWithLocalResource:@"winner.mp3" atPath:nil];
+	AFSoundPlayback *player = [[AFSoundPlayback alloc] initWithItem:item];
+	[player play];
 }
 
 -(void) didTap{

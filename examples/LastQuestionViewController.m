@@ -7,6 +7,7 @@
 //
 
 #import "LastQuestionViewController.h"
+#import "AFSoundManager.h"
 
 @interface LastQuestionViewController ()
 @property (retain, nonatomic) IBOutlet UIImageView *checkmark;
@@ -18,15 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	AFSoundItem *item = [[AFSoundItem alloc] initWithLocalResource:@"arrow.wav" atPath:nil];
+	AFSoundPlayback *player = [[AFSoundPlayback alloc] initWithItem:item];
+	[player play];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 - (IBAction)didTapScore:(id)sender {
 	[self.checkmark setHidden:NO];
 	[self performSelector:@selector(didFinishCheck) withObject:nil afterDelay:0.5];
+}
+
+-(void) viewDidAppear:(BOOL)animated{
+
 }
 
 -(void) didFinishCheck{

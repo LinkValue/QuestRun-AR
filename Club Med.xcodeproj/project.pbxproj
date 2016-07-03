@@ -298,6 +298,7 @@
 		4AF9712B1B5F5709001BFEB5 /* timers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AF9706A1B5F5708001BFEB5 /* timers.cpp */; };
 		4AF9712D1B5F5709001BFEB5 /* freak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AF970771B5F5708001BFEB5 /* freak.cpp */; };
 		4AF9712E1B5F5709001BFEB5 /* hough_similarity_voting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AF9707A1B5F5708001BFEB5 /* hough_similarity_voting.cpp */; };
+		D52761F6522BBDA5D7E1B040 /* libPods-ARAppNFT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9C33498C5887899476C7C7 /* libPods-ARAppNFT.a */; };
 		DA8A0FB71D27A51F00D77EB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8A0FB61D27A51F00D77EB5 /* Images.xcassets */; };
 		DA8A0FB91D27B43000D77EB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8A0FB81D27B02300D77EB5 /* Main.storyboard */; };
 		DA8A0FBD1D27B6C500D77EB5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FBB1D27B67D00D77EB5 /* HomeViewController.m */; };
@@ -311,6 +312,13 @@
 		DA8C1CE61D288CF900FDC59A /* LastQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CE51D288CF900FDC59A /* LastQuestionViewController.m */; };
 		DA8C1CE91D289BF900FDC59A /* SocialSharingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CE81D289BF900FDC59A /* SocialSharingViewController.m */; };
 		DA8C1CEC1D28B63400FDC59A /* LeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CEB1D28B63400FDC59A /* LeaderboardViewController.m */; };
+		DA8C1CEE1D28E75A00FDC59A /* arrow.wav in Resources */ = {isa = PBXBuildFile; fileRef = DA8C1CED1D28E75A00FDC59A /* arrow.wav */; };
+		DA8C1CF01D28E89300FDC59A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8C1CEF1D28E89300FDC59A /* MediaPlayer.framework */; };
+		DA8C1CF21D28E8C400FDC59A /* libAFSoundManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8C1CF11D28E8C400FDC59A /* libAFSoundManager.a */; };
+		DA8C1CF41D28F94500FDC59A /* tresurechest.wav in Resources */ = {isa = PBXBuildFile; fileRef = DA8C1CF31D28F94500FDC59A /* tresurechest.wav */; };
+		DA8C1CF71D28FEB100FDC59A /* winner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA8C1CF61D28FEB100FDC59A /* winner.mp3 */; };
+		DA8C1CFA1D2919FF00FDC59A /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CF91D2919FF00FDC59A /* PresentViewController.m */; };
+		DA8C1CFC1D291BBC00FDC59A /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = DA8C1CFB1D291BBC00FDC59A /* win.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -689,6 +697,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C40CE224F1D247360DFDD13 /* Pods-ARAppNFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARAppNFT.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARAppNFT/Pods-ARAppNFT.release.xcconfig"; sourceTree = "<group>"; };
+		20EF66A6EF1C3F88678215B2 /* Pods-ARAppNFT.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARAppNFT.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-ARAppNFT/Pods-ARAppNFT.distribution.xcconfig"; sourceTree = "<group>"; };
 		4A0F33950E8009F200065B70 /* glStateCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glStateCache.h; sourceTree = "<group>"; };
 		4A0F33960E8009F200065B70 /* glStateCache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glStateCache.c; sourceTree = "<group>"; };
 		4A13026B15BDF8F2003A441C /* Data2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data2; path = ARAppNFT/Data2; sourceTree = "<group>"; };
@@ -2161,6 +2171,8 @@
 		78BB3F1908E4837000D7CA2D /* videoDummy.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = videoDummy.h; sourceTree = "<group>"; };
 		78BB3F2008E4837000D7CA2D /* video.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = video.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		78BB3F2108E4837000D7CA2D /* videoConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = videoConfig.h; sourceTree = "<group>"; };
+		7A9C33498C5887899476C7C7 /* libPods-ARAppNFT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ARAppNFT.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		934D5D78EC18BD6E0E7CF727 /* Pods-ARAppNFT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARAppNFT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARAppNFT/Pods-ARAppNFT.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8A0FB51D27A45900D77EB5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8A0FB61D27A51F00D77EB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../ARAppNFT/Images.xcassets; sourceTree = "<group>"; };
 		DA8A0FB81D27B02300D77EB5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -2183,13 +2195,32 @@
 		DA8C1CE81D289BF900FDC59A /* SocialSharingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialSharingViewController.m; sourceTree = "<group>"; };
 		DA8C1CEA1D28B63400FDC59A /* LeaderboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderboardViewController.h; sourceTree = "<group>"; };
 		DA8C1CEB1D28B63400FDC59A /* LeaderboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardViewController.m; sourceTree = "<group>"; };
+		DA8C1CED1D28E75A00FDC59A /* arrow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = arrow.wav; sourceTree = "<group>"; };
+		DA8C1CEF1D28E89300FDC59A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		DA8C1CF11D28E8C400FDC59A /* libAFSoundManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFSoundManager.a; path = "../../../Library/Developer/Xcode/DerivedData/Club_Med-btlpnqdspsmwvkdaivbjryqckwot/Build/Products/Release-iphoneos/AFSoundManager/libAFSoundManager.a"; sourceTree = "<group>"; };
+		DA8C1CF31D28F94500FDC59A /* tresurechest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tresurechest.wav; sourceTree = "<group>"; };
+		DA8C1CF61D28FEB100FDC59A /* winner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winner.mp3; sourceTree = "<group>"; };
+		DA8C1CF81D2919FF00FDC59A /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		DA8C1CF91D2919FF00FDC59A /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
+		DA8C1CFB1D291BBC00FDC59A /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		192B0363C04D287A4E435F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A13031D15BDFF17003A441C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8C1CF21D28E8C400FDC59A /* libAFSoundManager.a in Frameworks */,
+				4A13032715BDFF17003A441C /* AVFoundation.framework in Frameworks */,
+				4A13032D15BDFF17003A441C /* AudioToolbox.framework in Frameworks */,
+				DA8C1CF01D28E89300FDC59A /* MediaPlayer.framework in Frameworks */,
 				DA8A0FCA1D27F66900D77EB5 /* CoreLocation.framework in Frameworks */,
 				4A920D691CC87EED0065B301 /* libz.dylib in Frameworks */,
 				4A13031E15BDFF17003A441C /* libARgsub_es.a in Frameworks */,
@@ -2203,10 +2234,8 @@
 				4A13032415BDFF17003A441C /* OpenGLES.framework in Frameworks */,
 				4A13032515BDFF17003A441C /* Foundation.framework in Frameworks */,
 				4A13032615BDFF17003A441C /* UIKit.framework in Frameworks */,
-				4A13032715BDFF17003A441C /* AVFoundation.framework in Frameworks */,
 				4A13032815BDFF17003A441C /* CoreMedia.framework in Frameworks */,
 				4A13032915BDFF17003A441C /* CoreVideo.framework in Frameworks */,
-				4A13032D15BDFF17003A441C /* AudioToolbox.framework in Frameworks */,
 				4A13032E15BDFF17003A441C /* Accelerate.framework in Frameworks */,
 				4A941D2E1AE5DCED000FA802 /* libAR2.a in Frameworks */,
 				4A941D321AE5DCF2000FA802 /* libARUtil.a in Frameworks */,
@@ -2215,6 +2244,7 @@
 				4AF96F3E1B5F5385001BFEB5 /* libc++.dylib in Frameworks */,
 				4A920D721CC87F5B0065B301 /* Security.framework in Frameworks */,
 				4A920D621CC87EBE0065B301 /* libcurl.a in Frameworks */,
+				D52761F6522BBDA5D7E1B040 /* libPods-ARAppNFT.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2288,6 +2318,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB64B22B3A17405BFED0D6CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -2329,6 +2366,8 @@
 				DA8C1CE81D289BF900FDC59A /* SocialSharingViewController.m */,
 				DA8C1CEA1D28B63400FDC59A /* LeaderboardViewController.h */,
 				DA8C1CEB1D28B63400FDC59A /* LeaderboardViewController.m */,
+				DA8C1CF81D2919FF00FDC59A /* PresentViewController.h */,
+				DA8C1CF91D2919FF00FDC59A /* PresentViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2359,6 +2398,10 @@
 		4A13026A15BDF8F2003A441C /* Other source */ = {
 			isa = PBXGroup;
 			children = (
+				DA8C1CFB1D291BBC00FDC59A /* win.wav */,
+				DA8C1CF61D28FEB100FDC59A /* winner.mp3 */,
+				DA8C1CED1D28E75A00FDC59A /* arrow.wav */,
+				DA8C1CF31D28F94500FDC59A /* tresurechest.wav */,
 				4A13029515BDF8F2003A441C /* ARAppNFT_Prefix.pch */,
 				4A13029615BDF8F2003A441C /* main.m */,
 				DA8A0FB81D27B02300D77EB5 /* Main.storyboard */,
@@ -4528,6 +4571,16 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		644083B5566BCCFC9F667CC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				934D5D78EC18BD6E0E7CF727 /* Pods-ARAppNFT.debug.xcconfig */,
+				0C40CE224F1D247360DFDD13 /* Pods-ARAppNFT.release.xcconfig */,
+				20EF66A6EF1C3F88678215B2 /* Pods-ARAppNFT.distribution.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		78BB3DD208E482DA00D7CA2D = {
 			isa = PBXGroup;
 			children = (
@@ -4540,6 +4593,8 @@
 				4A77EBA21162425300E4C0D2 /* Xcode */,
 				78BBCC8908E4A79900AEE575 /* System Frameworks & Libraries */,
 				78BB3F8708E486DB00D7CA2D /* Products */,
+				644083B5566BCCFC9F667CC5 /* Pods */,
+				D9A365BE85ED63A54479D7C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -4735,6 +4790,16 @@
 			name = "System Frameworks & Libraries";
 			sourceTree = "<group>";
 		};
+		D9A365BE85ED63A54479D7C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C1CF11D28E8C400FDC59A /* libAFSoundManager.a */,
+				DA8C1CEF1D28E89300FDC59A /* MediaPlayer.framework */,
+				7A9C33498C5887899476C7C7 /* libPods-ARAppNFT.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -4774,10 +4839,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A13033015BDFF17003A441C /* Build configuration list for PBXNativeTarget "ARAppNFT" */;
 			buildPhases = (
+				EA2967332DF7EB74B37B0352 /* [CP] Check Pods Manifest.lock */,
 				4A13030415BDFF17003A441C /* Resources */,
 				4A13031215BDFF17003A441C /* Sources */,
 				4A13031D15BDFF17003A441C /* Frameworks */,
 				4A13032F15BDFF17003A441C /* ShellScript */,
+				922D7BABCF907DCA7370BE59 /* [CP] Embed Pods Frameworks */,
+				5D54EBB2968371F30F64B35A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -4929,6 +4997,7 @@
 			buildConfigurationList = 4AC36B6E113E654400C86F19 /* Build configuration list for PBXNativeTarget "Eden" */;
 			buildPhases = (
 				4AC36B65113E654400C86F19 /* Sources */,
+				192B0363C04D287A4E435F1E /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -4981,6 +5050,7 @@
 			buildConfigurationList = 4AEB27041804A8D8002290C5 /* Build configuration list for PBXNativeTarget "ARWrapper" */;
 			buildPhases = (
 				4AEB26FE1804A8D8002290C5 /* Sources */,
+				FB64B22B3A17405BFED0D6CB /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -5077,13 +5147,16 @@
 				4A13035815BE02F5003A441C /* Icon-Small-50.png in Resources */,
 				4A13035915BE02F5003A441C /* Icon-Small.png in Resources */,
 				4A13035A15BE02F5003A441C /* Icon-Small@2x.png in Resources */,
+				DA8C1CEE1D28E75A00FDC59A /* arrow.wav in Resources */,
 				4A13035B15BE02F5003A441C /* Icon.png in Resources */,
+				DA8C1CFC1D291BBC00FDC59A /* win.wav in Resources */,
 				4A13035C15BE02F5003A441C /* Icon@2x.png in Resources */,
 				4A13035D15BE02F5003A441C /* Iris.png in Resources */,
 				DA8A0FB91D27B43000D77EB5 /* Main.storyboard in Resources */,
 				4A13035E15BE02F5003A441C /* MainWindow-iPad.xib in Resources */,
 				DA8A0FCB1D280F1100D77EB5 /* ARAppNFT-Info.plist in Resources */,
 				4A13035F15BE02F5003A441C /* MainWindow.xib in Resources */,
+				DA8C1CF41D28F94500FDC59A /* tresurechest.wav in Resources */,
 				DA8A0FB71D27A51F00D77EB5 /* Images.xcassets in Resources */,
 				4A13036015BE02F9003A441C /* Data2 in Resources */,
 				4A13036115BE02F9003A441C /* DataNFT in Resources */,
@@ -5098,6 +5171,7 @@
 				4AA8B5A1161AD60F00B48D70 /* Default-PortraitUpsideDown@2x.png in Resources */,
 				4AA8B5A2161AD60F00B48D70 /* Default.png in Resources */,
 				4AA8B5A3161AD60F00B48D70 /* Default@2x.png in Resources */,
+				DA8C1CF71D28FEB100FDC59A /* winner.mp3 in Resources */,
 				4AA8B5E2161AEE0000B48D70 /* Iris-568h@2x.png in Resources */,
 				4AA8B5E3161AEE0000B48D70 /* Iris-iPad.png in Resources */,
 				4AA8B5E4161AEE0000B48D70 /* Iris-iPad@2x.png in Resources */,
@@ -5138,6 +5212,51 @@
 			shellScript = "rm -f include/AR/config.h\n\nif [ \"$ACTION\" != \"clean\" ]\nthen\n\nSEDTMP=/tmp/SED.$$\ntrap \"rm -f $SEDTMP; exit 0\" 0 1 2 3 15\nVERSION=`sed -En -e 's/.*AR_HEADER_VERSION_STRING[[:space:]]+\"([0-9]+\\.[0-9]+(\\.[0-9]+)*)\".*/\\1/p' include/AR/config.h.in`\n\ncat > $SEDTMP <<EOF\ns/@CC@/$CC/\ns/@CPP@/$CPP/\ns/@CFLAG@/$CFLAG/\ns/@LDFLAG@/$LDFLAG/\ns/@ARFLAG@/$ARFLAG/\ns/@RANLIB@/$RANLIB/\ns/@LIBS@/$LIBS/\ns/@CV_CFLAG@/$CV_CFLAG/\ns/@CV_LDFLAG@/$CV_LDFLAG/\ns/@VERSION@/$VERSION/\nEOF\n\n#echo \"  create share/artoolkit5-config\"\n#sed -f $SEDTMP <share/artoolkit5-config.in > share/artoolkit5-config\n#chmod ugo+rx share/artoolkit5-config\n\necho \"  create include/AR/config.h\"\nsed -f $SEDTMP <include/AR/config.h.in > include/AR/config.h\n\necho \"  update Xcode/version.xcconfig\"\nsed -i \"\" -e \"s/VERSION = \\\".*\\\"/VERSION = \\\"$VERSION\\\"/\" Xcode/version.xcconfig\n\necho \"Done.\"\n\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		5D54EBB2968371F30F64B35A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARAppNFT/Pods-ARAppNFT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		922D7BABCF907DCA7370BE59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARAppNFT/Pods-ARAppNFT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA2967332DF7EB74B37B0352 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -5147,6 +5266,7 @@
 			files = (
 				4A13034715BE02E1003A441C /* ARAppNFTDelegate.m in Sources */,
 				DA8C1CE31D288CC000FDC59A /* ChestDiscoverViewController.m in Sources */,
+				DA8C1CFA1D2919FF00FDC59A /* PresentViewController.m in Sources */,
 				4A13034815BE02E1003A441C /* ARViewController.m in Sources */,
 				4A33B6DE18ADB9A20028A979 /* VirtualEnvironment.m in Sources */,
 				4A33B6CD18ADB8DB0028A979 /* trackingSub.c in Sources */,
@@ -5655,6 +5775,7 @@
 /* Begin XCBuildConfiguration section */
 		4A13033115BDFF17003A441C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 934D5D78EC18BD6E0E7CF727 /* Pods-ARAppNFT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -5679,6 +5800,7 @@
 		};
 		4A13033215BDFF17003A441C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C40CE224F1D247360DFDD13 /* Pods-ARAppNFT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -5704,6 +5826,7 @@
 		};
 		4A13033315BDFF17003A441C /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20EF66A6EF1C3F88678215B2 /* Pods-ARAppNFT.distribution.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topPiscineSpace;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topTennisSpace;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topBasketSpace;
+@property (retain, nonatomic) IBOutlet NSLayoutConstraint *topSpaceArrows;
+@property (retain, nonatomic) IBOutlet NSLayoutConstraint *leftArrowSpace;
 
 @end
 
@@ -37,7 +39,7 @@
 	
 	
 	self.topPiscineSpace.constant = 244;
-	self.topArrowSpace.constant = 162;
+	self.topArrowSpace.constant = 182;
 	self.topGolfSpace.constant = 280;
 	self.topTennisSpace.constant = 353;
 	self.topBasketSpace.constant = 370;
@@ -45,8 +47,9 @@
 		[self.view layoutIfNeeded];
 	}completion:^(BOOL finished) {
 		self.bottomSpaceTucheMarker.constant = 150;
+		self.topSpaceArrows.constant = 256;
 		[UIView animateWithDuration:1 animations:^{
-		[self.view layoutIfNeeded];
+			[self.view layoutIfNeeded];
 		}];
 	}];
 	
@@ -66,9 +69,13 @@
 			self.heightProgressConstraint.constant = 340;
 			color = UIColorFromRGB(0xda212e);
 			if ([beacons.major integerValue] == 1){
-				self.bottomSpaceTucheMarker.constant = 440;
+				self.bottomSpaceTucheMarker.constant = 420;
 				self.leftSpaceTucheMarker.constant = 230;
+				
+				
 			} else {
+				self.topSpaceArrows.constant = -20;
+				self.leftArrowSpace.constant = 60;
 				self.bottomSpaceTucheMarker.constant = 240;
 				self.leftSpaceTucheMarker.constant = 200;
 			}
@@ -106,7 +113,7 @@
 			if (beacons && [beacons.major integerValue] == 0 && beacons.proximity == CLProximityImmediate){
 				[self performSelector:@selector(launchNextScreen) withObject:nil afterDelay:0.5];
 			} else if (beacons && [beacons.major integerValue] == 1 && beacons.proximity == CLProximityImmediate ){
-			[self performSelector:@selector(launchFlechesScreen) withObject:nil afterDelay:0.5];
+				[self performSelector:@selector(launchFlechesScreen) withObject:nil afterDelay:0.5];
 			}
 		}];
 	});
@@ -132,6 +139,8 @@
 }
 
 - (void)dealloc {
+	//[_leftArrowSpace release];
+	//[_topSpaceArrows release];
 	//[_topBasketSpace release];
 	//[_topTennisSpace release];
 	//[_topPiscineSpace release];

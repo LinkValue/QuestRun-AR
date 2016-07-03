@@ -145,7 +145,7 @@
                                 </constraints>
                                 <state key="normal" image="flechette_picto"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtv-aU-Djk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtv-aU-Djk" userLabel="piscine">
                                 <rect key="frame" x="95" y="-40" width="50" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="4mD-c0-Pd5"/>
@@ -153,8 +153,8 @@
                                 </constraints>
                                 <state key="normal" image="piscine"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lc4-VG-J16">
-                                <rect key="frame" x="142" y="-60" width="26" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lc4-VG-J16" userLabel="raquette">
+                                <rect key="frame" x="109" y="-60" width="26" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="0il-TE-Yxy"/>
                                     <constraint firstAttribute="height" constant="50" id="1xU-aX-Jf4"/>
@@ -168,6 +168,27 @@
                                     <constraint firstAttribute="height" constant="50" id="o9Z-hF-zNV"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fleches_gauche" translatesAutoresizingMaskIntoConstraints="NO" id="yyP-X8-vdB">
+                                <rect key="frame" x="142" y="667" width="30" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="YsI-BS-BPF"/>
+                                    <constraint firstAttribute="height" constant="20" id="qeB-p4-OsI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fleches_droite" translatesAutoresizingMaskIntoConstraints="NO" id="Bj4-hM-9Xd">
+                                <rect key="frame" x="181" y="677" width="30" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="e53-bj-pcE"/>
+                                    <constraint firstAttribute="width" constant="30" id="inV-JZ-5bc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fleches_gauche" translatesAutoresizingMaskIntoConstraints="NO" id="aJS-xx-NSh" userLabel="fleches_gauche_arrow">
+                                <rect key="frame" x="375" y="204" width="30" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="6AJ-w7-4T9"/>
+                                    <constraint firstAttribute="width" constant="30" id="Awv-mb-hQt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -177,18 +198,25 @@
                             <constraint firstItem="imr-z4-xm1" firstAttribute="leading" secondItem="hbn-Pf-7Dq" secondAttribute="leading" constant="162" id="6Nq-Xg-hS5"/>
                             <constraint firstItem="Z8r-le-84e" firstAttribute="leading" secondItem="hbn-Pf-7Dq" secondAttribute="leading" id="BF8-AK-zuJ"/>
                             <constraint firstAttribute="trailing" secondItem="Z8r-le-84e" secondAttribute="trailing" id="Bin-Vj-c5G"/>
+                            <constraint firstItem="Bj4-hM-9Xd" firstAttribute="leading" secondItem="yyP-X8-vdB" secondAttribute="trailing" constant="9" id="GnU-vt-cZO"/>
+                            <constraint firstItem="yyP-X8-vdB" firstAttribute="leading" secondItem="hbn-Pf-7Dq" secondAttribute="leading" constant="142" id="LmL-Xg-ONG"/>
                             <constraint firstItem="uuI-cY-E7U" firstAttribute="top" secondItem="Z8r-le-84e" secondAttribute="bottom" id="O66-iW-j61"/>
                             <constraint firstItem="LQh-VY-06T" firstAttribute="leading" secondItem="hbn-Pf-7Dq" secondAttribute="leading" constant="28" id="Oun-rd-MdD"/>
                             <constraint firstItem="kuI-TW-vaz" firstAttribute="top" secondItem="hbn-Pf-7Dq" secondAttribute="top" constant="-50" id="RTC-h8-dZr"/>
-                            <constraint firstAttribute="trailing" secondItem="Lc4-VG-J16" secondAttribute="trailing" constant="207" id="S14-ej-tKZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Lc4-VG-J16" secondAttribute="trailing" constant="240" id="S14-ej-tKZ"/>
                             <constraint firstItem="Lc4-VG-J16" firstAttribute="top" secondItem="hbn-Pf-7Dq" secondAttribute="top" constant="-60" id="SWT-zm-Ai8"/>
+                            <constraint firstItem="uuI-cY-E7U" firstAttribute="top" secondItem="aJS-xx-NSh" secondAttribute="bottom" constant="443" id="TGE-kS-iDT"/>
                             <constraint firstAttribute="trailing" secondItem="omh-EA-aQb" secondAttribute="trailing" constant="53" id="WNR-Om-3b8"/>
                             <constraint firstItem="omh-EA-aQb" firstAttribute="top" secondItem="M25-Cf-Saw" secondAttribute="bottom" constant="-60" id="Zca-oy-GO2"/>
+                            <constraint firstItem="Bj4-hM-9Xd" firstAttribute="top" secondItem="yyP-X8-vdB" secondAttribute="top" constant="10" id="hcS-xk-y3w"/>
+                            <constraint firstAttribute="trailing" secondItem="aJS-xx-NSh" secondAttribute="trailing" constant="-30" id="p88-SU-MLk"/>
+                            <constraint firstItem="Bj4-hM-9Xd" firstAttribute="leading" secondItem="yyP-X8-vdB" secondAttribute="trailing" constant="9" id="pZz-n4-TMh"/>
                             <constraint firstAttribute="trailing" secondItem="kuI-TW-vaz" secondAttribute="trailing" constant="126" id="sTz-5c-SAL"/>
                             <constraint firstItem="K2L-EL-kKS" firstAttribute="top" secondItem="M25-Cf-Saw" secondAttribute="bottom" constant="-50" id="t5r-Qo-uLZ"/>
                             <constraint firstAttribute="trailing" secondItem="Rtv-aU-Djk" secondAttribute="trailing" constant="230" id="t5y-Lm-8Ip"/>
                             <constraint firstItem="Rtv-aU-Djk" firstAttribute="top" secondItem="M25-Cf-Saw" secondAttribute="bottom" constant="-40" id="wdH-iI-xhv"/>
                             <constraint firstItem="Z8r-le-84e" firstAttribute="top" secondItem="hbn-Pf-7Dq" secondAttribute="top" id="x4P-r2-B1s"/>
+                            <constraint firstItem="uuI-cY-E7U" firstAttribute="top" secondItem="yyP-X8-vdB" secondAttribute="bottom" constant="-20" id="yfM-RU-tPB"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -196,12 +224,14 @@
                     <connections>
                         <outlet property="bottomSpaceTucheMarker" destination="2l8-2i-me2" id="8tP-hC-U1H"/>
                         <outlet property="heightProgressConstraint" destination="tyk-Fz-zlc" id="lY8-NS-OSH"/>
+                        <outlet property="leftArrowSpace" destination="p88-SU-MLk" id="TtV-Z8-dP8"/>
                         <outlet property="leftSpaceTucheMarker" destination="6Nq-Xg-hS5" id="uDf-b8-l1u"/>
                         <outlet property="thermometerProgress" destination="LQh-VY-06T" id="TL2-jn-7dY"/>
                         <outlet property="topArrowSpace" destination="t5r-Qo-uLZ" id="QXL-VZ-qFw"/>
                         <outlet property="topBasketSpace" destination="RTC-h8-dZr" id="vLt-cV-eto"/>
                         <outlet property="topGolfSpace" destination="Zca-oy-GO2" id="Yih-NB-3vS"/>
                         <outlet property="topPiscineSpace" destination="wdH-iI-xhv" id="ri7-xy-eJY"/>
+                        <outlet property="topSpaceArrows" destination="yfM-RU-tPB" id="3w4-EC-iQO"/>
                         <outlet property="topTennisSpace" destination="SWT-zm-Ai8" id="j5r-6l-TkV"/>
                         <segue destination="ZMg-ce-5L6" kind="presentation" identifier="NextStepSegue" modalTransitionStyle="flipHorizontal" id="FM5-qo-m4M"/>
                         <segue destination="RSK-DQ-txf" kind="show" identifier="ChestSegue" animates="NO" id="9cb-3r-Qzd"/>
@@ -462,6 +492,8 @@
         <image name="coffre_seul" width="245" height="172"/>
         <image name="decompte_1_99" width="375" height="667"/>
         <image name="ecran_question" width="375" height="667"/>
+        <image name="fleches_droite" width="59" height="39"/>
+        <image name="fleches_gauche" width="70" height="47"/>
         <image name="flechette_picto" width="260" height="247"/>
         <image name="flechette_seul" width="245" height="245"/>
         <image name="golf" width="170" height="331"/>

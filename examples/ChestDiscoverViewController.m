@@ -7,6 +7,7 @@
 //
 
 #import "ChestDiscoverViewController.h"
+#import "AFSoundManager.h"
 
 @interface ChestDiscoverViewController ()
 
@@ -20,16 +21,18 @@
     // Do any additional setup after loading the view.
 	
 	NSMutableArray *images = [NSMutableArray new];
-	
+	AFSoundItem *item = [[AFSoundItem alloc] initWithLocalResource:@"tresurechest.wav" atPath:nil];
+	AFSoundPlayback *player = [[AFSoundPlayback alloc] initWithItem:item];
+	[player play];
 	for (int i = 0; i < 74; i++){
 		[images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"coffre_2_%d", i]]];
 	}
 	self.imageView.animationImages = images;
-	self.imageView.animationDuration = 2;
+	self.imageView.animationDuration = 3;
 	self.imageView.animationRepeatCount = 1;
 	[self.imageView startAnimating];
 	
-	[self performSelector:@selector(didFinishAnimating) withObject:nil afterDelay:2];
+	[self performSelector:@selector(didFinishAnimating) withObject:nil afterDelay:3];
 	
 }
 
