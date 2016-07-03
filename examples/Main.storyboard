@@ -189,6 +189,12 @@
                                     <constraint firstAttribute="width" constant="30" id="Awv-mb-hQt"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POx-AC-SbJ">
+                                <rect key="frame" x="243" y="0.0" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -227,6 +233,7 @@
                         <outlet property="leftArrowSpace" destination="p88-SU-MLk" id="TtV-Z8-dP8"/>
                         <outlet property="leftSpaceTucheMarker" destination="6Nq-Xg-hS5" id="uDf-b8-l1u"/>
                         <outlet property="thermometerProgress" destination="LQh-VY-06T" id="TL2-jn-7dY"/>
+                        <outlet property="timerLabel" destination="POx-AC-SbJ" id="KgF-uc-6GS"/>
                         <outlet property="topArrowSpace" destination="t5r-Qo-uLZ" id="QXL-VZ-qFw"/>
                         <outlet property="topBasketSpace" destination="RTC-h8-dZr" id="vLt-cV-eto"/>
                         <outlet property="topGolfSpace" destination="Zca-oy-GO2" id="Yih-NB-3vS"/>
@@ -398,10 +405,10 @@
             </objects>
             <point key="canvasLocation" x="1338.5" y="1246.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Present View Controller-->
         <scene sceneID="e8v-R3-CKT">
             <objects>
-                <viewController id="loa-Uv-PHX" sceneMemberID="viewController">
+                <viewController id="loa-Uv-PHX" customClass="PresentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w0e-6u-8jq"/>
                         <viewControllerLayoutGuide type="bottom" id="VaO-WJ-nf8"/>

@@ -299,6 +299,7 @@
 		4AF9712D1B5F5709001BFEB5 /* freak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AF970771B5F5708001BFEB5 /* freak.cpp */; };
 		4AF9712E1B5F5709001BFEB5 /* hough_similarity_voting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AF9707A1B5F5708001BFEB5 /* hough_similarity_voting.cpp */; };
 		D52761F6522BBDA5D7E1B040 /* libPods-ARAppNFT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9C33498C5887899476C7C7 /* libPods-ARAppNFT.a */; };
+		DA65382C1D292D320025ACF3 /* libMZTimerLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA65382B1D292D320025ACF3 /* libMZTimerLabel.a */; };
 		DA8A0FB71D27A51F00D77EB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8A0FB61D27A51F00D77EB5 /* Images.xcassets */; };
 		DA8A0FB91D27B43000D77EB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8A0FB81D27B02300D77EB5 /* Main.storyboard */; };
 		DA8A0FBD1D27B6C500D77EB5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FBB1D27B67D00D77EB5 /* HomeViewController.m */; };
@@ -2173,6 +2174,7 @@
 		78BB3F2108E4837000D7CA2D /* videoConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = videoConfig.h; sourceTree = "<group>"; };
 		7A9C33498C5887899476C7C7 /* libPods-ARAppNFT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ARAppNFT.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		934D5D78EC18BD6E0E7CF727 /* Pods-ARAppNFT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARAppNFT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARAppNFT/Pods-ARAppNFT.debug.xcconfig"; sourceTree = "<group>"; };
+		DA65382B1D292D320025ACF3 /* libMZTimerLabel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMZTimerLabel.a; path = "../../../Library/Developer/Xcode/DerivedData/Club_Med-btlpnqdspsmwvkdaivbjryqckwot/Build/Products/Release-iphoneos/MZTimerLabel/libMZTimerLabel.a"; sourceTree = "<group>"; };
 		DA8A0FB51D27A45900D77EB5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8A0FB61D27A51F00D77EB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../ARAppNFT/Images.xcassets; sourceTree = "<group>"; };
 		DA8A0FB81D27B02300D77EB5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -2217,6 +2219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA65382C1D292D320025ACF3 /* libMZTimerLabel.a in Frameworks */,
 				DA8C1CF21D28E8C400FDC59A /* libAFSoundManager.a in Frameworks */,
 				4A13032715BDFF17003A441C /* AVFoundation.framework in Frameworks */,
 				4A13032D15BDFF17003A441C /* AudioToolbox.framework in Frameworks */,
@@ -4793,6 +4796,7 @@
 		D9A365BE85ED63A54479D7C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA65382B1D292D320025ACF3 /* libMZTimerLabel.a */,
 				DA8C1CF11D28E8C400FDC59A /* libAFSoundManager.a */,
 				DA8C1CEF1D28E89300FDC59A /* MediaPlayer.framework */,
 				7A9C33498C5887899476C7C7 /* libPods-ARAppNFT.a */,

@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import "NextStepViewController.h"
 #import "ClubMedBeaconManager.h"
+#import "MZTimerLabel.h"
 
 @interface MapViewController ()<ClubMebBeaconDelegate>
 
@@ -22,8 +23,9 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topPiscineSpace;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topTennisSpace;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topBasketSpace;
-@property (retain, nonatomic) IBOutlet NSLayoutConstraint *topSpaceArrows;
-@property (retain, nonatomic) IBOutlet NSLayoutConstraint *leftArrowSpace;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSpaceArrows;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftArrowSpace;
+@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 
 @end
 
@@ -36,7 +38,8 @@
 	[beaconManager registerRegion];
 	self.thermometerProgress.backgroundColor = UIColorFromRGB(0x406ab2);
 	self.heightProgressConstraint.constant = 30;
-	
+	MZTimerLabel *stopwatch = [[MZTimerLabel alloc] initWithLabel:self.timerLabel];
+	[stopwatch start];
 	
 	self.topPiscineSpace.constant = 244;
 	self.topArrowSpace.constant = 182;
@@ -139,6 +142,7 @@
 }
 
 - (void)dealloc {
+	//[_timerLabel release];
 	//[_leftArrowSpace release];
 	//[_topSpaceArrows release];
 	//[_topBasketSpace release];

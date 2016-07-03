@@ -1,12 +1,15 @@
 PODS:
   - AFSoundManager (2.1)
+  - MZTimerLabel (0.5.4)
 
 DEPENDENCIES:
   - AFSoundManager
+  - MZTimerLabel
 
 SPEC CHECKSUMS:
   AFSoundManager: 232af6154e736e6b2d8c93fafebfafd14fad7510
+  MZTimerLabel: cd9bfb9304540ef2a9e163384fca9c978f0dbf83
 
-PODFILE CHECKSUM: a9458d39f4be54b288baa295742bf6675a9c3461
+PODFILE CHECKSUM: 8c92ff47f436e85a4c0b5ad496ff8c3d7fe2566c
 
 COCOAPODS: 1.0.1
