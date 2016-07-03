@@ -18,13 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-	[self performSelector:@selector(didTapDelay) withObject:nil afterDelay:1];
+	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap)];
 }
 
+-(void) didTap{
+	[self performSegueWithIdentifier:@"CadeauSegue" sender:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)prefersStatusBarHidden {
+	return YES;
 }
 
 /*
