@@ -14,7 +14,7 @@
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, assign) id<ClubMebBeaconDelegate> delegate;
 @property (nonatomic, assign) BOOL hasVisited;
-
+@property (nonatomic, strong) CLBeaconRegion *beaconRegion1;
 
 @end
 
@@ -46,10 +46,10 @@
 	NSUUID *beaconUUID = [[NSUUID alloc] initWithUUIDString:
 						  @"CB77A7EF-E3F6-4375-BAED-A107205DAE7F"];
 	NSString *beaconIdentifier = @"ibeacon.clubmed";
-	CLBeaconRegion *beaconRegion1 = [[CLBeaconRegion alloc] initWithProximityUUID:
+	self.beaconRegion1 = [[CLBeaconRegion alloc] initWithProximityUUID:
 									beaconUUID identifier:beaconIdentifier];
 
-	[self.locationManager startRangingBeaconsInRegion:beaconRegion1];
+	[self.locationManager startRangingBeaconsInRegion:self.beaconRegion1];
 	
 }
 
@@ -61,6 +61,9 @@
 				self.hasVisited = YES;
 			}
 			[self.delegate didRangeBeacons:nearBeacon inRegion:region];
+			if ([nearBeacon.major integerValue] == 1 && nearBeacon.proximity == CLProximityImmediate){
+				[manager stopRangingBeaconsInRegion:self.beaconRegion1];
+			}
 		}
 	}
 	

@@ -160,13 +160,14 @@
 	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 	ARAppNFTDelegate *delegate = [UIApplication sharedApplication].delegate;
 	delegate.currentViewcontroller = [storyboard instantiateInitialViewController];
-	//[self.navigationController presentViewController:delegate.currentViewcontroller animated:NO completion:nil];
+	[self.navigationController presentViewController:delegate.currentViewcontroller animated:NO completion:nil];
+	[self start];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self start];
+	
 }
 
 
@@ -647,7 +648,7 @@ static void startCallback(void *userData)
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    [self stop];
+    //[self stop];
     [super viewWillDisappear:animated];
 }
 

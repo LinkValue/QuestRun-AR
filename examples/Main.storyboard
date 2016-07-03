@@ -147,16 +147,51 @@
                         <outlet property="heightProgressConstraint" destination="tyk-Fz-zlc" id="lY8-NS-OSH"/>
                         <outlet property="thermometerProgress" destination="LQh-VY-06T" id="TL2-jn-7dY"/>
                         <segue destination="ZMg-ce-5L6" kind="presentation" identifier="NextStepSegue" modalTransitionStyle="flipHorizontal" id="FM5-qo-m4M"/>
+                        <segue destination="RSK-DQ-txf" kind="show" identifier="ChestSegue" animates="NO" id="9cb-3r-Qzd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNd-sk-A3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="451.5" y="353.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Chest Discover View Controller-->
+        <scene sceneID="1xM-LU-zA2">
+            <objects>
+                <viewController id="RSK-DQ-txf" customClass="ChestDiscoverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ioa-b3-I17"/>
+                        <viewControllerLayoutGuide type="bottom" id="aeS-n6-Xdw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j9m-Dw-3TW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffre_2_73" translatesAutoresizingMaskIntoConstraints="NO" id="5qB-Cm-IPU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5qB-Cm-IPU" secondAttribute="trailing" id="2g2-Qn-m0h"/>
+                            <constraint firstItem="5qB-Cm-IPU" firstAttribute="top" secondItem="j9m-Dw-3TW" secondAttribute="top" id="BBG-6z-YgX"/>
+                            <constraint firstItem="5qB-Cm-IPU" firstAttribute="leading" secondItem="j9m-Dw-3TW" secondAttribute="leading" id="R0n-Za-y6i"/>
+                            <constraint firstItem="aeS-n6-Xdw" firstAttribute="top" secondItem="5qB-Cm-IPU" secondAttribute="bottom" id="uGS-GZ-aaK"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="5qB-Cm-IPU" id="D5t-qM-TyN"/>
+                        <segue destination="fdn-Wk-sY6" kind="show" identifier="QuestionSegue" animates="NO" id="UuJ-Nv-wN1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KA6-Ed-WfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58.5" y="1246.5"/>
+        </scene>
+        <!--Last Question View Controller-->
         <scene sceneID="35t-vN-Ko7">
             <objects>
-                <viewController id="fdn-Wk-sY6" sceneMemberID="viewController">
+                <viewController id="fdn-Wk-sY6" customClass="LastQuestionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ib1-Vq-0J1"/>
                         <viewControllerLayoutGuide type="bottom" id="QkF-JX-EM4"/>
@@ -170,9 +205,15 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-NK-hgv">
                                 <rect key="frame" x="229" y="578" width="51" height="29"/>
+                                <connections>
+                                    <action selector="didDisplayPhotoCamera:" destination="fdn-Wk-sY6" eventType="touchUpInside" id="CG1-Wh-qLv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwg-1G-GS2">
                                 <rect key="frame" x="60" y="468" width="258" height="56"/>
+                                <connections>
+                                    <action selector="didTapScore:" destination="fdn-Wk-sY6" eventType="touchUpInside" id="0Ps-76-pZp"/>
+                                </connections>
                             </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tick_yes" translatesAutoresizingMaskIntoConstraints="NO" id="lv1-ni-jxI">
                                 <rect key="frame" x="280" y="485" width="25" height="25"/>
@@ -187,10 +228,106 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="checkmark" destination="lv1-ni-jxI" id="1Yd-6h-Wu4"/>
+                        <segue destination="uhg-Ty-E3M" kind="show" identifier="SocialSharingSegue" id="NsH-OP-oJi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twE-Ww-z5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="451.5" y="1123.5"/>
+            <point key="canvasLocation" x="451.5" y="1251.5"/>
+        </scene>
+        <!--Social Sharing View Controller-->
+        <scene sceneID="Ejj-tU-lZE">
+            <objects>
+                <viewController id="uhg-Ty-E3M" customClass="SocialSharingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fky-yD-ZCy"/>
+                        <viewControllerLayoutGuide type="bottom" id="UTq-5t-E5O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vfR-yW-s49">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partage_selfie" translatesAutoresizingMaskIntoConstraints="NO" id="HkE-vO-UCE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIo-0o-cSb">
+                                <rect key="frame" x="34" y="537" width="307" height="53"/>
+                                <state key="normal" image="bouton_selfie"/>
+                                <connections>
+                                    <action selector="didTapShare:" destination="uhg-Ty-E3M" eventType="touchUpInside" id="Vo7-1e-OKy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HkE-vO-UCE" firstAttribute="top" secondItem="vfR-yW-s49" secondAttribute="top" id="6Tk-5I-lrI"/>
+                            <constraint firstItem="HkE-vO-UCE" firstAttribute="leading" secondItem="vfR-yW-s49" secondAttribute="leading" id="OH8-fr-yGI"/>
+                            <constraint firstItem="UTq-5t-E5O" firstAttribute="top" secondItem="HkE-vO-UCE" secondAttribute="bottom" id="Pfa-Yf-eiQ"/>
+                            <constraint firstAttribute="trailing" secondItem="HkE-vO-UCE" secondAttribute="trailing" id="mO9-Ql-Yqh"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="qvV-Zg-mHM" kind="show" identifier="LeaderboardSegue" id="0yh-0X-ZDg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFS-XW-twc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875.5" y="1251.5"/>
+        </scene>
+        <!--Leaderboard View Controller-->
+        <scene sceneID="taC-UT-XQL">
+            <objects>
+                <viewController id="qvV-Zg-mHM" customClass="LeaderboardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Rf-NU-Yfr"/>
+                        <viewControllerLayoutGuide type="bottom" id="mNY-Qg-lif"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GZm-gQ-7uW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leaderboard_@x2" translatesAutoresizingMaskIntoConstraints="NO" id="wKy-WW-ty3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wKy-WW-ty3" secondAttribute="trailing" id="JPv-Wh-HKD"/>
+                            <constraint firstItem="wKy-WW-ty3" firstAttribute="top" secondItem="GZm-gQ-7uW" secondAttribute="top" id="XfQ-WK-JoL"/>
+                            <constraint firstItem="mNY-Qg-lif" firstAttribute="top" secondItem="wKy-WW-ty3" secondAttribute="bottom" id="n2I-hr-ONd"/>
+                            <constraint firstItem="wKy-WW-ty3" firstAttribute="leading" secondItem="GZm-gQ-7uW" secondAttribute="leading" id="zLk-Sm-qiM"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageview" destination="wKy-WW-ty3" id="e4H-Gg-Kye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbm-kj-McI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338.5" y="1246.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="e8v-R3-CKT">
+            <objects>
+                <viewController id="loa-Uv-PHX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w0e-6u-8jq"/>
+                        <viewControllerLayoutGuide type="bottom" id="VaO-WJ-nf8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2iq-k0-aZR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JoL-0i-TTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774.5" y="1246.5"/>
         </scene>
         <!--Next Step View Controller-->
         <scene sceneID="yKk-hc-ehi">
@@ -255,12 +392,16 @@
     </scenes>
     <resources>
         <image name="bouton_go" width="254" height="54"/>
+        <image name="bouton_selfie" width="253" height="53"/>
+        <image name="coffre_2_73" width="375" height="667"/>
         <image name="coffre_seul" width="245" height="172"/>
         <image name="decompte_1_99" width="375" height="667"/>
         <image name="ecran_question" width="375" height="667"/>
         <image name="flechette_seul" width="245" height="245"/>
         <image name="home" width="750" height="1334"/>
+        <image name="leaderboard_@x2" width="375" height="667"/>
         <image name="map" width="375" height="667"/>
+        <image name="partage_selfie" width="375" height="667"/>
         <image name="tick_yes" width="24" height="24"/>
         <image name="tuche_marker" width="173" height="171"/>
         <image name="txt" width="1562" height="2779"/>

@@ -301,14 +301,16 @@
 		DA8A0FB71D27A51F00D77EB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8A0FB61D27A51F00D77EB5 /* Images.xcassets */; };
 		DA8A0FB91D27B43000D77EB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8A0FB81D27B02300D77EB5 /* Main.storyboard */; };
 		DA8A0FBD1D27B6C500D77EB5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FBB1D27B67D00D77EB5 /* HomeViewController.m */; };
-		DA8A0FC01D27B82500D77EB5 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FBF1D27B82500D77EB5 /* CountDownViewController.m */; };
 		DA8A0FC11D27B82700D77EB5 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FBF1D27B82500D77EB5 /* CountDownViewController.m */; };
 		DA8A0FC41D27BF7E00D77EB5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FC31D27BF7E00D77EB5 /* MapViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		DA8A0FC81D27F53900D77EB5 /* ClubMedBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		DA8A0FCA1D27F66900D77EB5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A0FC91D27F66900D77EB5 /* CoreLocation.framework */; };
 		DA8A0FCB1D280F1100D77EB5 /* ARAppNFT-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A13028715BDF8F2003A441C /* ARAppNFT-Info.plist */; };
-		DA8C1CDF1D28392400FDC59A /* NextStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CDE1D28392400FDC59A /* NextStepViewController.m */; };
 		DA8C1CE01D2867F900FDC59A /* NextStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CDE1D28392400FDC59A /* NextStepViewController.m */; };
+		DA8C1CE31D288CC000FDC59A /* ChestDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CE21D288CC000FDC59A /* ChestDiscoverViewController.m */; };
+		DA8C1CE61D288CF900FDC59A /* LastQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CE51D288CF900FDC59A /* LastQuestionViewController.m */; };
+		DA8C1CE91D289BF900FDC59A /* SocialSharingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CE81D289BF900FDC59A /* SocialSharingViewController.m */; };
+		DA8C1CEC1D28B63400FDC59A /* LeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C1CEB1D28B63400FDC59A /* LeaderboardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2173,6 +2175,14 @@
 		DA8A0FC91D27F66900D77EB5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DA8C1CDD1D28392400FDC59A /* NextStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextStepViewController.h; sourceTree = "<group>"; };
 		DA8C1CDE1D28392400FDC59A /* NextStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextStepViewController.m; sourceTree = "<group>"; };
+		DA8C1CE11D288CC000FDC59A /* ChestDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChestDiscoverViewController.h; sourceTree = "<group>"; };
+		DA8C1CE21D288CC000FDC59A /* ChestDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChestDiscoverViewController.m; sourceTree = "<group>"; };
+		DA8C1CE41D288CF900FDC59A /* LastQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastQuestionViewController.h; sourceTree = "<group>"; };
+		DA8C1CE51D288CF900FDC59A /* LastQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastQuestionViewController.m; sourceTree = "<group>"; };
+		DA8C1CE71D289BF900FDC59A /* SocialSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialSharingViewController.h; sourceTree = "<group>"; };
+		DA8C1CE81D289BF900FDC59A /* SocialSharingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialSharingViewController.m; sourceTree = "<group>"; };
+		DA8C1CEA1D28B63400FDC59A /* LeaderboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderboardViewController.h; sourceTree = "<group>"; };
+		DA8C1CEB1D28B63400FDC59A /* LeaderboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2311,6 +2321,14 @@
 				DA8A0FC61D27E84800D77EB5 /* ClubMedBeaconManager.m */,
 				DA8C1CDD1D28392400FDC59A /* NextStepViewController.h */,
 				DA8C1CDE1D28392400FDC59A /* NextStepViewController.m */,
+				DA8C1CE11D288CC000FDC59A /* ChestDiscoverViewController.h */,
+				DA8C1CE21D288CC000FDC59A /* ChestDiscoverViewController.m */,
+				DA8C1CE41D288CF900FDC59A /* LastQuestionViewController.h */,
+				DA8C1CE51D288CF900FDC59A /* LastQuestionViewController.m */,
+				DA8C1CE71D289BF900FDC59A /* SocialSharingViewController.h */,
+				DA8C1CE81D289BF900FDC59A /* SocialSharingViewController.m */,
+				DA8C1CEA1D28B63400FDC59A /* LeaderboardViewController.h */,
+				DA8C1CEB1D28B63400FDC59A /* LeaderboardViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -5128,11 +5146,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A13034715BE02E1003A441C /* ARAppNFTDelegate.m in Sources */,
+				DA8C1CE31D288CC000FDC59A /* ChestDiscoverViewController.m in Sources */,
 				4A13034815BE02E1003A441C /* ARViewController.m in Sources */,
 				4A33B6DE18ADB9A20028A979 /* VirtualEnvironment.m in Sources */,
 				4A33B6CD18ADB8DB0028A979 /* trackingSub.c in Sources */,
 				DA8A0FC11D27B82700D77EB5 /* CountDownViewController.m in Sources */,
 				4A33B6D618ADB95F0028A979 /* VEObjectMovie.m in Sources */,
+				DA8C1CEC1D28B63400FDC59A /* LeaderboardViewController.m in Sources */,
 				4A33B6DB18ADB97B0028A979 /* VEObject.m in Sources */,
 				4A33B6CB18ADB8700028A979 /* EAGLView.m in Sources */,
 				4A33B6ED18ADBA520028A979 /* ARMarker.m in Sources */,
@@ -5140,12 +5160,14 @@
 				4A347B3B18B16329000BEB89 /* ARMarkerMulti.m in Sources */,
 				4A33B6E418ADBA100028A979 /* ARMarkerNFT.m in Sources */,
 				4A13035315BE02E1003A441C /* main.m in Sources */,
+				DA8C1CE91D289BF900FDC59A /* SocialSharingViewController.m in Sources */,
 				4A33B70C18ADC8700028A979 /* ARView.m in Sources */,
 				DA8A0FC81D27F53900D77EB5 /* ClubMedBeaconManager.m in Sources */,
 				DA8C1CE01D2867F900FDC59A /* NextStepViewController.m in Sources */,
 				4A33B6D318ADB9440028A979 /* VEObjectOBJ.m in Sources */,
 				DA8A0FC41D27BF7E00D77EB5 /* MapViewController.m in Sources */,
 				4A33B6E818ADBA2F0028A979 /* ARMarkerSquare.m in Sources */,
+				DA8C1CE61D288CF900FDC59A /* LastQuestionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5349,14 +5371,12 @@
 				4AF101D8180BFC9100A922DE /* paramLT.c in Sources */,
 				4AF101C4180BFC9100A922DE /* mAllocMul.c in Sources */,
 				4AF101B8180BFC9100A922DE /* arGetTransMatStereo.c in Sources */,
-				DA8C1CDF1D28392400FDC59A /* NextStepViewController.m in Sources */,
 				4AF101E5180BFC9900A922DE /* arLabelingSubDBIC.c in Sources */,
 				4AF101CA180BFC9100A922DE /* mFree.c in Sources */,
 				4AF101B4180BFC9100A922DE /* arFilterTransMat.c in Sources */,
 				4AF101D9180BFC9100A922DE /* vAlloc.c in Sources */,
 				4AF101CF180BFC9100A922DE /* mTrans.c in Sources */,
 				4AF101DE180BFC9100A922DE /* vTridiag.c in Sources */,
-				DA8A0FC01D27B82500D77EB5 /* CountDownViewController.m in Sources */,
 				4AF101D5180BFC9100A922DE /* paramDistortion.c in Sources */,
 				4AF1022A180BFC9900A922DE /* arLabelingSubEWZ.c in Sources */,
 				4AF101B2180BFC9100A922DE /* arDetectMarker.c in Sources */,

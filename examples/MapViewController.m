@@ -90,7 +90,7 @@
 		[self.view layoutIfNeeded];
 		self.thermometerProgress.backgroundColor = UIColorFromRGB(0x406ab2);
 	}];
-	[self dismissViewControllerAnimated:YES completion:nil];
+	[self performSegueWithIdentifier:@"ChestSegue" sender:nil];
 }
 
 - (void)dealloc {
