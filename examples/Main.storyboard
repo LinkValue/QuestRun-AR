@@ -122,7 +122,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omh-EA-aQb">
-                                <rect key="frame" x="296" y="300" width="26" height="50"/>
+                                <rect key="frame" x="296" y="-60" width="26" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="TUs-Ku-H8C"/>
                                     <constraint firstAttribute="width" constant="26" id="n0D-ZC-PwH"/>
@@ -130,7 +130,7 @@
                                 <state key="normal" image="golf"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuI-TW-vaz">
-                                <rect key="frame" x="199" y="370" width="50" height="41"/>
+                                <rect key="frame" x="199" y="-50" width="50" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="Xvf-9T-3LM"/>
                                     <constraint firstAttribute="width" constant="50" id="tFo-cK-YiE"/>
@@ -138,7 +138,7 @@
                                 <state key="normal" image="basket_ball"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2L-EL-kKS">
-                                <rect key="frame" x="232" y="182" width="50" height="48"/>
+                                <rect key="frame" x="232" y="-50" width="50" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Utw-VZ-6b6"/>
                                     <constraint firstAttribute="height" constant="48" id="nrl-En-Yyq"/>
@@ -146,15 +146,15 @@
                                 <state key="normal" image="flechette_picto"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtv-aU-Djk">
-                                <rect key="frame" x="95" y="264" width="50" height="50"/>
+                                <rect key="frame" x="95" y="-40" width="50" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="4mD-c0-Pd5"/>
-                                    <constraint firstAttribute="height" constant="50" id="Nf3-vs-hZ5"/>
+                                    <constraint firstAttribute="height" constant="32" id="Nf3-vs-hZ5"/>
                                 </constraints>
-                                <state key="normal" image="basket_ball"/>
+                                <state key="normal" image="piscine"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lc4-VG-J16">
-                                <rect key="frame" x="142" y="353" width="26" height="50"/>
+                                <rect key="frame" x="142" y="-60" width="26" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="0il-TE-Yxy"/>
                                     <constraint firstAttribute="height" constant="50" id="1xU-aX-Jf4"/>
@@ -179,24 +179,30 @@
                             <constraint firstAttribute="trailing" secondItem="Z8r-le-84e" secondAttribute="trailing" id="Bin-Vj-c5G"/>
                             <constraint firstItem="uuI-cY-E7U" firstAttribute="top" secondItem="Z8r-le-84e" secondAttribute="bottom" id="O66-iW-j61"/>
                             <constraint firstItem="LQh-VY-06T" firstAttribute="leading" secondItem="hbn-Pf-7Dq" secondAttribute="leading" constant="28" id="Oun-rd-MdD"/>
-                            <constraint firstItem="kuI-TW-vaz" firstAttribute="top" secondItem="hbn-Pf-7Dq" secondAttribute="top" constant="370" id="RTC-h8-dZr"/>
+                            <constraint firstItem="kuI-TW-vaz" firstAttribute="top" secondItem="hbn-Pf-7Dq" secondAttribute="top" constant="-50" id="RTC-h8-dZr"/>
                             <constraint firstAttribute="trailing" secondItem="Lc4-VG-J16" secondAttribute="trailing" constant="207" id="S14-ej-tKZ"/>
-                            <constraint firstItem="Lc4-VG-J16" firstAttribute="top" secondItem="hbn-Pf-7Dq" secondAttribute="top" constant="353" id="SWT-zm-Ai8"/>
+                            <constraint firstItem="Lc4-VG-J16" firstAttribute="top" secondItem="hbn-Pf-7Dq" secondAttribute="top" constant="-60" id="SWT-zm-Ai8"/>
                             <constraint firstAttribute="trailing" secondItem="omh-EA-aQb" secondAttribute="trailing" constant="53" id="WNR-Om-3b8"/>
-                            <constraint firstItem="omh-EA-aQb" firstAttribute="top" secondItem="M25-Cf-Saw" secondAttribute="bottom" constant="280" id="Zca-oy-GO2"/>
+                            <constraint firstItem="omh-EA-aQb" firstAttribute="top" secondItem="M25-Cf-Saw" secondAttribute="bottom" constant="-60" id="Zca-oy-GO2"/>
                             <constraint firstAttribute="trailing" secondItem="kuI-TW-vaz" secondAttribute="trailing" constant="126" id="sTz-5c-SAL"/>
-                            <constraint firstItem="K2L-EL-kKS" firstAttribute="top" secondItem="M25-Cf-Saw" secondAttribute="bottom" constant="162" id="t5r-Qo-uLZ"/>
+                            <constraint firstItem="K2L-EL-kKS" firstAttribute="top" secondItem="M25-Cf-Saw" secondAttribute="bottom" constant="-50" id="t5r-Qo-uLZ"/>
                             <constraint firstAttribute="trailing" secondItem="Rtv-aU-Djk" secondAttribute="trailing" constant="230" id="t5y-Lm-8Ip"/>
-                            <constraint firstItem="Rtv-aU-Djk" firstAttribute="top" secondItem="M25-Cf-Saw" secondAttribute="bottom" constant="244" id="wdH-iI-xhv"/>
+                            <constraint firstItem="Rtv-aU-Djk" firstAttribute="top" secondItem="M25-Cf-Saw" secondAttribute="bottom" constant="-40" id="wdH-iI-xhv"/>
                             <constraint firstItem="Z8r-le-84e" firstAttribute="top" secondItem="hbn-Pf-7Dq" secondAttribute="top" id="x4P-r2-B1s"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="bottomSpaceTucheMarker" destination="2l8-2i-me2" id="8tP-hC-U1H"/>
                         <outlet property="heightProgressConstraint" destination="tyk-Fz-zlc" id="lY8-NS-OSH"/>
                         <outlet property="leftSpaceTucheMarker" destination="6Nq-Xg-hS5" id="uDf-b8-l1u"/>
                         <outlet property="thermometerProgress" destination="LQh-VY-06T" id="TL2-jn-7dY"/>
+                        <outlet property="topArrowSpace" destination="t5r-Qo-uLZ" id="QXL-VZ-qFw"/>
+                        <outlet property="topBasketSpace" destination="RTC-h8-dZr" id="vLt-cV-eto"/>
+                        <outlet property="topGolfSpace" destination="Zca-oy-GO2" id="Yih-NB-3vS"/>
+                        <outlet property="topPiscineSpace" destination="wdH-iI-xhv" id="ri7-xy-eJY"/>
+                        <outlet property="topTennisSpace" destination="SWT-zm-Ai8" id="j5r-6l-TkV"/>
                         <segue destination="ZMg-ce-5L6" kind="presentation" identifier="NextStepSegue" modalTransitionStyle="flipHorizontal" id="FM5-qo-m4M"/>
                         <segue destination="RSK-DQ-txf" kind="show" identifier="ChestSegue" animates="NO" id="9cb-3r-Qzd"/>
                     </connections>
@@ -463,6 +469,7 @@
         <image name="leaderboard_@x2" width="375" height="667"/>
         <image name="map" width="375" height="667"/>
         <image name="partage_selfie" width="375" height="667"/>
+        <image name="piscine" width="228" height="145"/>
         <image name="tennis" width="137" height="267"/>
         <image name="tick_yes" width="24" height="24"/>
         <image name="tuche_marker" width="173" height="171"/>

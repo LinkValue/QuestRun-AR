@@ -17,6 +17,12 @@
 @property (weak, nonatomic) IBOutlet UIView *thermometerProgress;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightProgressConstraint;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topArrowSpace;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topGolfSpace;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topPiscineSpace;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topTennisSpace;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topBasketSpace;
+
 @end
 
 @implementation MapViewController
@@ -29,10 +35,19 @@
 	self.thermometerProgress.backgroundColor = UIColorFromRGB(0x406ab2);
 	self.heightProgressConstraint.constant = 30;
 	
-	self.bottomSpaceTucheMarker.constant = 150;
 	
+	self.topPiscineSpace.constant = 244;
+	self.topArrowSpace.constant = 162;
+	self.topGolfSpace.constant = 280;
+	self.topTennisSpace.constant = 353;
+	self.topBasketSpace.constant = 370;
 	[UIView animateWithDuration:1 animations:^{
 		[self.view layoutIfNeeded];
+	}completion:^(BOOL finished) {
+		self.bottomSpaceTucheMarker.constant = 150;
+		[UIView animateWithDuration:1 animations:^{
+		[self.view layoutIfNeeded];
+		}];
 	}];
 	
 }
@@ -117,6 +132,12 @@
 }
 
 - (void)dealloc {
+	//[_topBasketSpace release];
+	//[_topTennisSpace release];
+	//[_topPiscineSpace release];
+//[_topGolfSpace release];
+//	[_topArrowSpace release];
+//	[_topArrowSpace release];
 	//[_leftSpaceTucheMarker release];
 	//[_heightProgressConstraint release];
 	//[super dealloc];
