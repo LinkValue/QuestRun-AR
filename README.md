@@ -17,5 +17,5 @@ Les beacons utilisés dans le projet sont :
 
 Les modeles de marqueur de realité augmenté sont dans le projets dans le dossier https://github.com/LinkValue/poc-ar/tree/master/examples/ARAppNFT/Markers
 
-plus d'info sur le site de la bibliotheques ARToolkit.
+plus d'info sur le site de la bibliothèque ARToolkit.
 
