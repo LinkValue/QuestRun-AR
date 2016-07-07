@@ -11,11 +11,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 //end license
 
 Info:
-Les beacons utilisés dans le projet sont : 
+Les beacons utilisées dans le projet sont : 
 - CB77A7EF-E3F6-4375-BAED-A107205DAE7F-1-1
 - CB77A7EF-E3F6-4375-BAED-A107205DAE7F-0-0
 
-Les modeles de marqueur de realité augmenté sont dans le projets dans le dossier https://github.com/LinkValue/poc-ar/tree/master/examples/ARAppNFT/Markers
+Les modeles de marqueur de realité augmentée sont dans le projet dans le dossier https://github.com/LinkValue/poc-ar/tree/master/examples/ARAppNFT/Markers
 
 plus d'info sur le site de la bibliothèque ARToolkit.
 
