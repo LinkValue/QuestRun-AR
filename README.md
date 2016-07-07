@@ -1,31 +1,21 @@
-#Règle d'évaluation du ** Prix du code **
+Ce projet est sous license MIT:
 
+Copyright (c) 2016 <Christopher Saez, Jean Laurent Louis, Raphael de Freitas, Melynda Louis, LinkValue>
 
-### Présentation
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Le fait d'utiliser des technologies non connues du jury technique ne pose aucun problème.
-L'ensemble de l'évaluation portera sur l'ingéniosité et le respect de bonnes pratiques de développement.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-L'utilisation de ce `README` sera réservé aux instructions du setup de l'environnement.
- 
-#####1) Qualité collaborative
-- La quantité de code dans vos commits doit être la moins importante possible, 
-- Vos messages de commits devront être clairs et explicites,
-- L'utilisation d'un "branching model" adéquat à application est apprécié
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#####2) Puissance & Ingéniosité
-- Les "Brute Force" : quantité de fonctionnalités codées
-- Les "Genius" : coding d'algorithmes interessants
-- Les "Hackers" : détournement astucieux de données
+//end license
 
-#####3) Robustesse
-- Utilisation de tests (unitaire, intégration, Selenium, etc..) 
+Info:
+Les beacons utilisés dans le projet sont : 
+- CB77A7EF-E3F6-4375-BAED-A107205DAE7F-1-1
+- CB77A7EF-E3F6-4375-BAED-A107205DAE7F-0-0
 
+Les modeles de marqueur de realité augmenté sont dans le projets dans le dossier https://github.com/LinkValue/poc-ar/tree/master/examples/ARAppNFT/Markers
 
-> **Notes:** Afin de faciliter le processus d'évaluation vous devrez ajouter un fichier `code.md` ou `readme.txt` pour présenter et justifier vos choix techniques.
-
-*Tout au long du Hackathon le jury d'experts s'autorise à venir vous posez des questions sur le fonctionnement de votre application et des patterns utilisés.*
-
-#### Happy Coding! 
-
+plus d'info sur le site de la bibliotheques ARToolkit.
 
